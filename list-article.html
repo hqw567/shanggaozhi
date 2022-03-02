@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章列表页</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/dist/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <h1 class="logo">
+                <a href="/">
+                    <img src="images/logo.png" alt="上高职">
+                    <strong class="display-n">上高职</strong>
+                </a>
+            </h1>
+            <nav>
+                <ul class="nav">
+                    <li><a href="/">首页</a></li>
+                    <li>
+                        <a href="./list-school.html">单招学校</a>
+                        <ul class="head-dropdown">
+                            <li><a href="#">单招学校</a></li>
+                            <li><a href="#">单招学校</a></li>
+                            <li><a href="#">单招学校</a></li>
+                            <li><a href="#">单招学校</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./list-specialty.html">高职专业</a>
+                        <ul class="head-dropdown">
+                            <li><a href="#">高职专业</a></li>
+                            <li><a href="#">高职专业</a></li>
+                            <li><a href="#">高职专业</a></li>
+                            <li><a href="#">高职专业</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">考试信息</a>
+                        <ul class="head-dropdown">
+                            <li><a href="#">考试信息</a></li>
+                            <li><a href="#">考试信息</a></li>
+                            <li><a href="#">考试信息</a></li>
+                            <li><a href="#">考试信息</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./list-article.html">单招资讯</a>
+                        <ul class="head-dropdown">
+                            <li><a href="#">单招资讯</a></li>
+                            <li><a href="#">单招资讯</a></li>
+                            <li><a href="#">单招资讯</a></li>
+                            <li><a href="#">单招资讯</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">院校动态</a>
+                        <ul class="head-dropdown">
+                            <li><a href="#">院校动态</a></li>
+                            <li><a href="#">院校动态</a></li>
+                            <li><a href="#">院校动态</a></li>
+                            <li><a href="#">院校动态</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search">
+                <form action="https://www.shangzhixiao.com/e/search/index.php" target="_blank" method="post"
+                    name="schform" id="schform" autocomplete="off">
+                    <input type="hidden" value="title,skey" name="show">
+                    <input class="tempid" name="tempid" value="1" type="hidden">
+                    <select name="classid" class="dropdown-search selected">
+                        <option value="4,9,10,11,12">资讯</option>
+                        <option value="7">学校</option>
+                        <option value="5">专业</option>
+                    </select>
+                    <input name="keyboard" type="text" id="keyboard" class="input-search" value=""
+                        placeholder="请输入关键词...">
+                    <button id="search-submit" type="submit" class="input-submit" name="submit">搜索</button>
+
+                </form>
+            </div>
+            <div class="zixun">
+                <a href="#">在线咨询</a>
+            </div>
+        </div>
+    </header>
+    <div class="nav-path wrap">
+        <div class="nav-path-ico"></div>
+        <a href="#">上高职网</a>
+        >
+        <a href="#">考试信息</a>
+    </div>
+    <div class="article-list wrap">
+        <div class="list">
+            <div class="list-title">
+                <h1>考试信息</h1>
+                <div class="tab">
+                    <ul>
+                        <li>报考信息</li>
+                        <li>考试科目</li>
+                        <li>备考心得</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-content">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/banner/2.jpg" alt="">
+                            <div class="list-right">
+                                <h2>为什么越来越多的人选择单招考大学，你知道吗？</h2>
+                                <p>
+                                    于正在备于正在备 对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                                </p>
+                                <div class="list-right-bottom">
+                                    <p><span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                                    </p>
+                                    <p><span class="list-time-ico"></span><span class="list-time">2022-02-28</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/banner/2.jpg" alt="">
+                            <div class="list-right">
+                                <h2>为什么越来越多的人选择单招考大学，你知道吗？</h2>
+                                <p>
+                                    于正在备于正在备 对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                                </p>
+                                <div class="list-right-bottom">
+                                    <p><span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                                    </p>
+                                    <p><span class="list-time-ico"></span><span class="list-time">2022-02-28</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/banner/2.jpg" alt="">
+                            <div class="list-right">
+                                <h2>为什么越来越多的人选择单招考大学，你知道吗？</h2>
+                                <p>
+                                    于正在备于正在备 对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                                </p>
+                                <div class="list-right-bottom">
+                                    <p><span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                                    </p>
+                                    <p><span class="list-time-ico"></span><span class="list-time">2022-02-28</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/banner/2.jpg" alt="">
+                            <div class="list-right">
+                                <h2>为什么越来越多的人选择单招考大学，你知道吗？</h2>
+                                <p>
+                                    于正在备于正在备 对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                                </p>
+                                <div class="list-right-bottom">
+                                    <p><span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                                    </p>
+                                    <p><span class="list-time-ico"></span><span class="list-time">2022-02-28</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/banner/2.jpg" alt="">
+                            <div class="list-right">
+                                <h2>为什么越来越多的人选择单招考大学，你知道吗？</h2>
+                                <p>
+                                    于正在备于正在备 对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                                </p>
+                                <div class="list-right-bottom">
+                                    <p><span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                                    </p>
+                                    <p><span class="list-time-ico"></span><span class="list-time">2022-02-28</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/banner/2.jpg" alt="">
+                            <div class="list-right">
+                                <h2>为什么越来越多的人选择单招考大学，你知道吗？</h2>
+                                <p>
+                                    于正在备于正在备 对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                                </p>
+                                <div class="list-right-bottom">
+                                    <p><span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                                    </p>
+                                    <p><span class="list-time-ico"></span><span class="list-time">2022-02-28</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/banner/2.jpg" alt="">
+                            <div class="list-right">
+                                <h2>为什么越来越多的人选择单招考大学，你知道吗？</h2>
+                                <p>
+                                    于正在备于正在备 对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                                </p>
+                                <div class="list-right-bottom">
+                                    <p><span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                                    </p>
+                                    <p><span class="list-time-ico"></span><span class="list-time">2022-02-28</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/banner/2.jpg" alt="">
+                            <div class="list-right">
+                                <h2>为什么越来越多的人选择单招考大学，你知道吗？</h2>
+                                <p>
+                                    于正在备于正在备 对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                                </p>
+                                <div class="list-right-bottom">
+                                    <p><span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                                    </p>
+                                    <p><span class="list-time-ico"></span><span class="list-time">2022-02-28</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/banner/2.jpg" alt="">
+                            <div class="list-right">
+                                <h2>为什么越来越多的人选择单招考大学，你知道吗？</h2>
+                                <p>
+                                    于正在备于正在备 对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                                </p>
+                                <div class="list-right-bottom">
+                                    <p><span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                                    </p>
+                                    <p><span class="list-time-ico"></span><span class="list-time">2022-02-28</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/banner/2.jpg" alt="">
+                            <div class="list-right">
+                                <h2>为什么越来越多的人选择单招考大学，你知道吗？</h2>
+                                <p>
+                                    于正在备于正在备 对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                                </p>
+                                <div class="list-right-bottom">
+                                    <p><span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                                    </p>
+                                    <p><span class="list-time-ico"></span><span class="list-time">2022-02-28</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-page">
+                    <a href="#" class="nav-page-pre">上一页</a>
+                    <a href="#" class="nav-page-first">首页</a>
+                    <span>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                    </span>
+                    <a href="#" class="nav-page-last">末页</a>
+                    <a href="#" class="nav-page-next">下一页</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="article-right">
+            <div class="main-right-trend">
+                <h1>推荐阅读</h1>
+                <div class="main-right-trend-content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./images/specialty/specialty.png" alt="">
+                                <div>
+                                    <p>单招升学是利大于弊还是弊大于利？</p>
+                                    <span>2022-02-24</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/specialty/specialty.png" alt="">
+                                <div>
+                                    <p>单招升学是利大于弊还是弊大于利？</p>
+                                    <span>2022-02-24</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/specialty/specialty.png" alt="">
+                                <div>
+                                    <p>单招升学是利大于弊还是弊大于利？</p>
+                                    <span>2022-02-24</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-right-school">
+                <h1>热门院校</h1>
+                <div class="main-right-school-content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./images/school/school.png" alt="">
+                                <div class="main-right-school-title">
+                                    <p>旅游职业技术学院</p>
+                                    <p><span>公办</span><span>国家重点</span><span>财商类</span></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/school/school.png" alt="">
+                                <div class="main-right-school-title">
+                                    <p>旅游职业技术学院</p>
+                                    <p><span>公办</span><span>国家重点</span><span>财商类</span></p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-right-specialty">
+                <h1>热门专业</h1>
+                <div class="main-right-specialty-content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./images/specialty/specialty.png" alt="">
+                                <p>茶叶生产生</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/specialty/specialty.png" alt="">
+                                <p>茶叶生产生</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/specialty/specialty.png" alt="">
+                                <p>茶叶生产生</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/specialty/specialty.png" alt="">
+                                <p>茶叶生产生</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer wrap">
+            <div class="footer-top">
+                <div class="footer-ttop">
+                    <div class="footer-title">合作网站</div>
+                    <div class="footer-contact">
+                        <span><a href=""></a></span>
+                        <span><a href=""></a></span>
+                        <span><a href=""></a></span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">上职校网</a></li>
+                        <li><a href="#">上高职网</a></li>
+                        <li><a href="#">长沙中职招生网</a></li>
+                        <li><a href="#">淘学校</a></li>
+                        <li><a href="#">三省教育</a></li>
+                        <li><a href="#">爱尚大学</a></li>
+                        <li><a href="#">帮学网</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">版权所有©2021- 2022 <a href="#">湖南三省教育咨询有限公司(sansheng8.com)</a> All Rights Reserved
+                </div>
+                <div class="filing"><a href="https://beian.miit.gov.cn/">备案号： 湘ICP备2021020565号-2 湘公网安备
+                        43010202000522号</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
