@@ -77,8 +77,10 @@ table {
 
 
 body {
-    font: 12px/150% -apple-system, SF UI Text, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* font: 12px/150% -apple-system, SF UI Text, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+    line-height: 150%;
     color: #666;
     background: #fff
 }
