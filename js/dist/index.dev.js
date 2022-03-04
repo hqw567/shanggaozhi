@@ -33,4 +33,28 @@ $(function () {
       return false;
     }
   });
+  $(".school .option").click(function () {
+    $(this).addClass('option-border');
+    $(this).siblings().removeClass('option-border');
+    $('.school .option-select-cont').eq($(this).index()).addClass('option-select-cont-show');
+    $('.school .option-select-cont').eq($(this).index()).siblings().removeClass('option-select-cont-show');
+  });
+  $(".popular .option").click(function () {
+    $(this).addClass('option-border');
+    $(this).siblings().removeClass('option-border');
+    $('.popular .option-select-cont').eq($(this).index()).addClass('option-select-cont-show');
+    $('.popular .option-select-cont').eq($(this).index()).siblings().removeClass('option-select-cont-show');
+  });
+  $(".specialty .option").click(function () {
+    $(this).addClass('option-border');
+    $(this).siblings().removeClass('option-border');
+    $('.specialty .option-select-cont').eq($(this).index()).addClass('option-select-cont-show');
+    $('.specialty .option-select-cont').eq($(this).index()).siblings().removeClass('option-select-cont-show');
+  });
+  $(".list .option").click(function () {
+    $(this).addClass('option-border');
+    $(this).siblings().removeClass('option-border');
+    $('.list .option-select-cont').eq($(this).index()).addClass('option-select-cont-show');
+    $('.list .option-select-cont').eq($(this).index()).siblings().removeClass('option-select-cont-show');
+  });
 });
