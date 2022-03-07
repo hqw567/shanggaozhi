@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>上高职</title>
-    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/dist/index.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script src="./js/swiper-bundle.min.js"> </script>
 </head>
 
 <body>
@@ -69,18 +70,24 @@
                     </li>
                 </ul>
             </nav>
-            <div class="search">
+            <div class="search model-box">
                 <form action="https://www.shangzhixiao.com/e/search/index.php" target="_blank" method="post"
                     name="schform" id="schform" autocomplete="off">
                     <input type="hidden" value="title,skey" name="show">
                     <input class="tempid" name="tempid" value="1" type="hidden">
-                    <select name="classid" class="dropdown-search selected">
+                    <input class="classid" name="classid" value="4,9,10,11,12" type="hidden">
+                    <!-- <select name="classid" class="dropdown-search selected">
                         <option value="4,9,10,11,12">资讯</option>
                         <option value="7">学校</option>
                         <option value="5">专业</option>
-                    </select>
-                    <input name="keyboard" type="text" id="keyboard" class="input-search" value=""
-                        placeholder="请输入关键词...">
+                    </select> -->
+                    <div id="box" class="model-select-text" data-value="4,9,10,11,12">资讯</div>
+                    <ul class="model-select-option">
+                        <li data-option="4,9,10,11,12" class="data-selected">资讯</li>
+                        <li data-option="7">学校</li>
+                        <li data-option="5">专业</li>
+                    </ul>
+                    <input name="keyboard" type="text" id="keyboard" class="input-search" value="" placeholder="请输入关键词">
                     <button id="search-submit" type="submit" class="input-submit" name="submit">搜索</button>
 
                 </form>
@@ -93,7 +100,7 @@
     <main class="wrap">
         <div class="main-top">
             <div class="main-tleft">
-                <div class="main-tleft-title"><span>头条</span>高职单招</div>
+                <div class="main-tleft-title"><span></span>高职单招</div>
                 <ul class="main-tleft-text">
                     <li><a href="#" alt=""><span>1</span>
                             <p>我是文字文字文字文字字文字文字文字文字</p><span>02-24</span>
@@ -130,51 +137,71 @@
                 </ul><span></span>
             </div>
             <div class="main-tcenter">
-                <div class="main-tcenter-top">
-                    <ul>
-                        <li><a href="">
+                <div class="main-tcenter-top swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="">
                                 <img src="images/banner/1.jpeg" alt="">
                                 <p>2022年湖南省高职单招报考信息和考试内容以及报考政策汇总</p>
                             </a>
                         </li>
-                        <li><a href="#"><img src="images/banner/2.jpg" alt="">
+                        <li class="swiper-slide"><a href="">
+                                <img src="images/banner/2.jpg" alt="">
                                 <p>2022年湖南省高职单招报考信息和考试内容以及报考政策汇总</p>
-                            </a></li>
-                        <li><a href="#"><img src="images/banner/3.jpg" alt="">
-                                <p>2022年湖南省高职单招报考信息和考试内容以及报考政策汇总</p>
-                            </a></li>
-                        <li><a href="#"><img src="images/banner/4.jpeg" alt=""></a>
-                            <p>2022年湖南省高职单招报考信息和考试内容以及报考政策汇总</p>
+                            </a>
                         </li>
-                        <li><a href="#"><img src="images/banner/5.jpeg" alt=""></a>
-                            <p>2022年湖南省高职单招报考信息和考试内容以及报考政策汇总</p>
+                        <li class="swiper-slide"><a href="">
+                                <img src="images/banner/3.jpg" alt="">
+                                <p>2022年湖南省高职单招报考信息和考试内容以及报考政策汇总</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="">
+                                <img src="images/banner/4.jpeg" alt="">
+                                <p>2022年湖南省高职单招报考信息和考试内容以及报考政策汇总</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="">
+                                <img src="images/banner/5.jpeg" alt="">
+                                <p>2022年湖南省高职单招报考信息和考试内容以及报考政策汇总</p>
+                            </a>
                         </li>
                     </ul>
-                    <div class="min-tcenter-dots">
+                    <div class="swiper-pagination"></div>
+
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- <div class="min-tcenter-dots">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="main-tcenter-bottom">
                     <ul>
                         <li><a href="#">
-                                <p>高职单招本科院校名单</p>
-                                <span>立即查看</span>
+                                <!-- <p>高职单招本科院校名单</p>
+                                <span>立即查看</span> -->
+                                <img src="./images/banner/banner1.png" alt="">
                             </a></li>
                         <li><a href="#">
-                                <p>高职单招历年真题下载</p>
-                                <span>立即查看</span>
+                                <!-- <p>高职单招历年真题下载</p>
+                                <span>立即查看</span> -->
+                                <img src="./images/banner/banner2.png" alt="">
+
                             </a></li>
                         <li><a href="#">
-                                <p>高职单招适合男生专业</p>
-                                <span>立即查看</span>
+                                <!-- <p>高职单招适合男生专业</p>
+                                <span>立即查看</span> -->
+                                <img src="./images/banner/banner3.png" alt="">
+
                             </a></li>
                         <li><a href="#">
-                                <p>高职单招适合女生专业</p>
-                                <span>立即查看</span>
+                                <!-- <p>高职单招适合女生专业</p>
+                                <span>立即查看</span> -->
+                                <img src="./images/banner/banner4.png" alt="">
+
                             </a></li>
                     </ul>
                 </div>
@@ -1392,49 +1419,63 @@
                     <ul>
                         <li>
                             <a href="#">
-                                <span>1</span>
+                                <div class="school-rank-triangle">
+                                    <span>1</span>
+                                </div>
                                 <img src="./images/school/school.png" alt="">
                                 <p>长沙卫生职业学院</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span>2</span>
+                                <div class="school-rank-triangle">
+                                    <span>2</span>
+                                </div>
                                 <img src="./images/school/school.png" alt="">
                                 <p>长沙卫生职业学院</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span>3</span>
+                                <div class="school-rank-triangle">
+                                    <span>3</span>
+                                </div>
                                 <img src="./images/school/school.png" alt="">
                                 <p>长沙卫生职业学院</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span>4</span>
+                                <div class="school-rank-triangle">
+                                    <span>4</span>
+                                </div>
+                                <img src="./images/school/school.png" alt="">
+                                <p>长沙卫生职业学生职业学院生职业学院生职业学院院</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="school-rank-triangle">
+                                    <span>5</span>
+                                </div>
                                 <img src="./images/school/school.png" alt="">
                                 <p>长沙卫生职业学院</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span>5</span>
+                                <div class="school-rank-triangle">
+                                    <span>6</span>
+                                </div>
                                 <img src="./images/school/school.png" alt="">
                                 <p>长沙卫生职业学院</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span>4</span>
-                                <img src="./images/school/school.png" alt="">
-                                <p>长沙卫生职业学院</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>6</span>
+                                <div class="school-rank-triangle">
+                                    <span>7</span>
+                                </div>
                                 <img src="/images/school/school.png" alt="">
                                 <p>长沙卫生职业学院</p>
                             </a>
@@ -1442,7 +1483,9 @@
 
                         <li>
                             <a href="#">
-                                <span>8</span>
+                                <div class="school-rank-triangle">
+                                    <span>8</span>
+                                </div>
                                 <img src="./images/school/school.png" alt="">
                                 <p>长沙卫生职业学院</p>
                             </a>
