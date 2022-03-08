@@ -74,9 +74,20 @@ table {
   /*合并外边线*/
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-  -webkit-font-smoothing: antialiased;
   font-size: 12px;
   line-height: 150%;
   color: #666;
@@ -104,7 +115,7 @@ a {
 }
 
 a:hover {
-  color: #C81623;
+  color: #02A297;
 }
 
 h1,
