@@ -152,3 +152,20 @@ function selectModel() {
         obj.find('li.data-selected').addClass('selected').siblings('li').removeClass('selected');
     }
 }
+
+$(function () {
+    $(window).scroll(function () {
+        let top = $(this).scrollTop()
+        if (top > 200) {
+            $('.gotop').stop().fadeIn()
+
+        } else {
+            $('.gotop').stop().fadeOut()
+        }
+    })
+    $('.gotop').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 300)
+    })
+})
