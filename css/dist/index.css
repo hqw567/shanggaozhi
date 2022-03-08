@@ -3031,6 +3031,7 @@ article.wrap .list-content ul li a img {
 .model-box .model-select-text {
   position: relative;
   width: 30%;
+  font-size: 14px;
   text-indent: 10px;
   cursor: pointer;
   user-select: none;
@@ -3068,7 +3069,7 @@ article.wrap .list-content ul li a img {
   height: 28px;
   line-height: 28px;
   color: #333;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   padding-left: 10px;
