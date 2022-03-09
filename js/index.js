@@ -33,45 +33,66 @@ $(function () {
 
 
 
-    let sDefault = $(".school .tab-default")
-    let sTabUl = $(".school .tab-default").siblings($('ul'))
+    let schoolDefault = $(".school .tab-default")
+    let schoolTabUl = $(".school .tab-default").siblings($('ul'))
+    let specialtyDefault = $(".specialty .tab-default")
+    let specialtyTabUl = $(".specialty .tab-default").siblings($('ul'))
+    let listDefault = $(".list .tab-default")
+    let listTabUl = $(".list .tab-default").siblings($('ul'))
     $(".school .option").click(function () {
-
         $(this).addClass('option-border')
         $(this).siblings().removeClass('option-border')
         $('.school .option-select-cont').eq($(this).index()).addClass('option-select-cont-show')
         $('.school .option-select-cont').eq($(this).index()).siblings().removeClass(
             'option-select-cont-show')
-        if (sDefault.css('display') === 'block') {
-            sTabUl.css('display', 'none')
+        if (schoolDefault.css('display') === 'block') {
+            schoolTabUl.css('display', 'none')
         }
-        sDefault.text($(this).text())
+        schoolDefault.text($(this).text())
+    })
+    schoolDefault.click(function () {
+        schoolTabUl.toggle()
     })
 
-    $(".school .tab-default").click(function () {
-        sTabUl.toggle()
-    })
-    $(".popular .option").click(function () {
-        $(this).addClass('option-border')
-        $(this).siblings().removeClass('option-border')
-        $('.popular .option-select-cont').eq($(this).index()).addClass('option-select-cont-show')
-        $('.popular .option-select-cont').eq($(this).index()).siblings().removeClass(
-            'option-select-cont-show')
-    })
     $(".specialty .option").click(function () {
         $(this).addClass('option-border')
         $(this).siblings().removeClass('option-border')
         $('.specialty .option-select-cont').eq($(this).index()).addClass('option-select-cont-show')
         $('.specialty .option-select-cont').eq($(this).index()).siblings().removeClass(
             'option-select-cont-show')
+        if (specialtyDefault.css('display') === 'block') {
+            specialtyTabUl.css('display', 'none')
+        }
+        specialtyDefault.text($(this).text())
     })
+    specialtyDefault.click(function () {
+        specialtyTabUl.toggle()
+    })
+
     $(".list .option").click(function () {
         $(this).addClass('option-border')
         $(this).siblings().removeClass('option-border')
         $('.list .option-select-cont').eq($(this).index()).addClass('option-select-cont-show')
         $('.list .option-select-cont').eq($(this).index()).siblings().removeClass(
             'option-select-cont-show')
+        if (listDefault.css('display') === 'block') {
+            listTabUl.css('display', 'none')
+        }
+        listDefault.text($(this).text())
     })
+    listDefault.click(function () {
+        listTabUl.toggle()
+    })
+
+    $(".popular .option").click(function () {
+        $(this).addClass('option-border-hot')
+        $(this).siblings().removeClass('option-border-hot')
+        $('.popular .option-select-cont').eq($(this).index()).addClass('option-select-cont-show')
+        $('.popular .option-select-cont').eq($(this).index()).siblings().removeClass(
+            'option-select-cont-show')
+    })
+
+
     $(".main-school-left .option").click(function () {
         $(this).addClass('main-school-active')
         $(this).siblings().removeClass('main-school-active')

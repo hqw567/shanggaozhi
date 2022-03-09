@@ -1012,6 +1012,7 @@ article.wrap .list-content {
                 .popular-conten-read {
                     font-size: 12px;
                     color: #b7b4b4;
+                    white-space: nowrap;
 
                     dd {
                         display: inline-block;
@@ -1112,6 +1113,35 @@ article.wrap .list-content {
             border-color: #02a297 transparent transparent transparent;
         }
 
+    }
+
+    #tab {
+        position: relative;
+
+        ul {
+            display: block;
+            display: none;
+            position: absolute;
+            right: 0px;
+            top: 26px;
+            width: 100%;
+
+            li {
+                position: relative;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+                font-size: 14px;
+                color: #eee;
+                width: 100%;
+                height: 25px;
+                line-height: 25px;
+                box-sizing: border-box;
+                text-align: center;
+                background-color: #888;
+
+            }
+        }
     }
 
     header {
@@ -1593,59 +1623,7 @@ article.wrap .list-content {
             }
         }
 
-        .tab {
-            position: relative;
 
-            .tab-default {
-                display: block;
-                width: 95px;
-                height: 25px;
-                line-height: 25px;
-                text-align: center;
-                background-color: #fff;
-                font-size: 14px;
-                color: #888888;
-                border-radius: 5px;
-
-                &:after {
-                    position: relative;
-                    top: 13px;
-                    right: -4px;
-                    content: "";
-                    width: 0;
-                    height: 0;
-                    border-width: 5px 5px 0;
-                    border-style: solid;
-                    border-color: #666 transparent transparent;
-                    margin-left: 5px;
-                }
-            }
-
-            ul {
-                display: block;
-                display: none;
-                position: absolute;
-                right: 0px;
-                top: 26px;
-                width: 100%;
-
-                li {
-                    position: relative;
-                    top: 0;
-                    left: 0;
-                    cursor: pointer;
-                    font-size: 14px;
-                    color: #eee;
-                    width: 100%;
-                    height: 25px;
-                    line-height: 25px;
-                    box-sizing: border-box;
-                    text-align: center;
-                    background-color: #888;
-
-                }
-            }
-        }
     }
 
     .school-content {
@@ -1679,13 +1657,13 @@ article.wrap .list-content {
                     }
 
                     .school-right {
-                        width: 75%;
+                        width: 70%;
 
                         .school-right-title {
                             color: #101010;
                             font-size: 16px;
                             margin-bottom: 15px;
-                            width: 90%;
+                            width: 89%;
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
@@ -1952,14 +1930,18 @@ article.wrap .list-content {
                     display: flex;
                     justify-content: space-between;
                     width: 100%;
+                    height: 100%;
+                }
+
+                & a div:first-child {
+                    width: 35%;
+                    height: 100%;
+                    margin-right: 15px;
 
                     img {
-                        width: 35%;
-                        height: 20%;
-                        margin-right: 15px;
+                        width: 100%;
+                        height: 100%;
                     }
-
-
                 }
             }
         }
@@ -1970,6 +1952,20 @@ article.wrap .list-content {
     .list-right {
         width: 66%;
 
+        p {
+            letter-spacing: 0;
+            display: -webkit-box;
+            font-size: 14px;
+            color: #7b7878;
+            width: 100%;
+            height: 36px;
+            text-align: justify;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin: 17px 0 6px;
+        }
 
 
         h2 {
@@ -2121,7 +2117,7 @@ article.wrap .list-content {
                     p {
                         font-size: 16px;
                         color: #101010;
-                        width: 54%;
+                        width: 60%;
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
@@ -2269,8 +2265,11 @@ article.wrap .list-content {
     .popular-content {
         ul {
             display: none;
+            width: 100%;
 
             li {
+                width: 100%;
+
                 a {
                     width: 100%;
                     display: flex;
@@ -2294,7 +2293,7 @@ article.wrap .list-content {
                     }
 
                     p {
-                        width: 210px;
+                        width: 73%;
                         text-overflow: ellipsis;
                         white-space: nowrap;
                         overflow: hidden;
@@ -2303,6 +2302,7 @@ article.wrap .list-content {
                     .popular-conten-read {
                         font-size: 12px;
                         color: #b7b4b4;
+                        white-space: nowrap;
 
                         dd {
                             display: inline-block;
@@ -2322,6 +2322,31 @@ article.wrap .list-content {
                     background-color: #f4c47f;
                 }
             }
+        }
+    }
+
+    .tab-default {
+        display: block;
+        width: 95px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        background-color: #fff;
+        font-size: 14px;
+        color: #888888;
+        border-radius: 5px;
+
+        &:after {
+            position: relative;
+            top: 13px;
+            right: -4px;
+            content: "";
+            width: 0;
+            height: 0;
+            border-width: 5px 5px 0;
+            border-style: solid;
+            border-color: #666 transparent transparent;
+            margin-left: 5px;
         }
     }
 

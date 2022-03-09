@@ -692,7 +692,28 @@ footer {
     &::before {
         position: absolute;
         top: 38px;
-        left: 42px;
+        left: 40px;
+        content: '';
+        width: 0;
+        height: 0;
+        border-width: 8px;
+        border-style: solid;
+        border-color: #02a297 transparent transparent transparent;
+    }
+
+}
+.option-border-hot {
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2px solid #02A297;
+    background-color: #DAF9F7;
+    color: #02A297 !important;
+
+    &::before {
+        position: absolute;
+        top: 38px;
+        left: 40px;
         content: '';
         width: 0;
         height: 0;
