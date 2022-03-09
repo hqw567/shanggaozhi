@@ -102,6 +102,10 @@ $(function () {
     })
 
 
+
+    $('.mobile-menu').click(function () {
+        $('.nav').toggle()
+    })
 })
 
 $(function () {

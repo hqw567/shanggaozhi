@@ -624,7 +624,7 @@ footer .footer .footer-bottom .copyright {
 .option-border-hot::before {
   position: absolute;
   top: 38px;
-  left: 40px;
+  left: 42%;
   content: "";
   width: 0;
   height: 0;
@@ -648,4 +648,351 @@ footer .footer .footer-bottom .copyright {
   width: 81px;
   content: "";
   border-bottom: 2px solid #02a297;
+}
+
+/*1100分辨率（大于960px，小于1199px）*/
+/*880分辨率（大于768px，小于959px）*/
+/*720分辨率（大于480px，小于767px）*/
+/*440分辨率以下（小于479px）*/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  body {
+    width: 100%;
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .wrap {
+    max-width: 100% !important;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .gotop {
+    border-width: 0;
+    z-index: 99;
+    cursor: pointer;
+    position: fixed;
+    right: 4%;
+    bottom: 7%;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .gotop svg {
+    width: 90%;
+    height: 90%;
+  }
+
+  .option-border {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border: 0px solid #02A297;
+    background-color: #DAF9F7;
+    color: #fff !important;
+    background-color: #000 !important;
+  }
+  .option-border::before {
+    position: absolute;
+    top: 38px;
+    left: 42px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #02a297 transparent transparent transparent;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #b7b7b7;
+    z-index: 999;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  header .wrap .logo,
+header .wrap .logo a img {
+    display: block;
+    width: 105px;
+    height: 30px;
+  }
+  header .wrap .nav {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f7f6f6;
+    display: none;
+  }
+  header .wrap nav .nav > li {
+    float: left;
+    position: relative;
+    margin-left: 0px;
+    width: 100%;
+  }
+  header .wrap nav .nav > li .head-dropdown {
+    display: block;
+    position: static;
+    top: 77px;
+    left: -33px;
+    box-shadow: 0 0 0px 0 #02A297;
+    border-radius: 0px;
+    overflow: hidden;
+    padding: 15px 0 8px 20px;
+    background-color: #fff;
+  }
+  header .wrap nav .nav > li .head-dropdown li {
+    float: left;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    background-color: transparent;
+    border-bottom: 0px dashed #DEF0EF;
+  }
+  header .wrap nav .nav > li .head-dropdown li:nth-last-child(1) {
+    border-bottom: 0px;
+  }
+  header .wrap nav .nav > li .head-dropdown li a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #918E8E;
+    white-space: nowrap;
+    margin-right: 22px;
+    margin-bottom: 7px;
+    font-weight: 700;
+  }
+  header .wrap nav .nav > li .head-dropdown li a:hover {
+    color: #91DAD5;
+  }
+  header .wrap nav .nav > li > a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #101010;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  header .wrap nav .nav > li > a:hover {
+    color: #02A297;
+  }
+  header .wrap nav .nav > li > a::before {
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 7px 0 14px;
+    width: 20px;
+    height: 20px;
+    background-color: #02A297;
+  }
+  header .wrap nav .nav > li > a::after {
+    position: absolute;
+    bottom: 39px;
+    right: -16px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #E1DFDF transparent transparent transparent;
+  }
+  header .wrap nav .nav > li:nth-child(1) > a::after {
+    display: none;
+  }
+  header .wrap nav .nav > li > a:hover::after {
+    border-color: #02A297 transparent transparent transparent;
+  }
+  header .wrap nav .nav > li:hover .head-dropdown {
+    display: block;
+  }
+  header .wrap .search {
+    display: block;
+    display: none;
+    width: 222px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #02A297;
+    border-radius: 20px;
+  }
+  header .wrap .search form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .wrap .search-shadow {
+    box-shadow: 0px 0px 5px 0px #02A297;
+  }
+  header .wrap .dropdown-search {
+    width: 30%;
+    cursor: pointer;
+    padding-left: 10px;
+    border: 0;
+    font-size: 14px;
+  }
+  header .wrap .dropdown-search option {
+    height: 50px;
+  }
+  header .wrap .input-search {
+    padding: 0 2%;
+    width: 42%;
+    font-size: 12px;
+  }
+  header .wrap .input-submit {
+    background-color: #02a297;
+    height: 35px;
+    width: 22%;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  header .wrap .input-submit span {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+  }
+  header .wrap .zixun a {
+    display: none;
+  }
+  header .wrap .mobile-head {
+    height: 45px;
+    display: flex;
+    align-items: center;
+  }
+  header .wrap .mobile-head .mobile-search {
+    margin-right: 15px;
+    width: 34px;
+    height: 34px;
+    display: block;
+  }
+  header .wrap .mobile-head .mobile-search svg {
+    width: 100%;
+    height: 100%;
+  }
+  header .wrap .mobile-head .mobile-search svg path {
+    fill: #02A297;
+  }
+  header .wrap .mobile-head .mobile-menu {
+    width: 36px;
+    height: 36px;
+    display: block;
+  }
+  header .wrap .mobile-head .mobile-menu svg {
+    width: 100%;
+    height: 100%;
+  }
+  header .wrap .mobile-head .mobile-menu svg path {
+    fill: #02A297;
+  }
+
+  footer {
+    background-color: #3b3b3b;
+  }
+  footer .footer {
+    margin-top: 25px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding: 25px 20px;
+  }
+  footer .footer .footer-top {
+    border-bottom: 1px solid #575656;
+    padding-bottom: 15px;
+  }
+  footer .footer .footer-top .footer-ttop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .footer .footer-top .footer-ttop .footer-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+  }
+  footer .footer .footer-top .footer-ttop .footer-contact span {
+    cursor: pointer;
+    margin-left: 24px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+  }
+  footer .footer .footer-top .footer-ttop .footer-contact span path {
+    fill: #db4646;
+  }
+  footer .footer .footer-top .footer-ttop .footer-contact span:nth-child(2) path {
+    fill: #02a241;
+  }
+  footer .footer .footer-top .footer-ttop .footer-contact span:nth-child(3) {
+    width: 22px;
+    height: 22px;
+  }
+  footer .footer .footer-top .footer-ttop .footer-contact span:nth-child(3) path {
+    fill: #f7f6f6;
+  }
+  footer .footer .footer-top .footer-links {
+    margin-top: 8px;
+  }
+  footer .footer .footer-top .footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .footer .footer-top .footer-links ul li {
+    margin-top: 10px;
+    margin-right: 27px;
+  }
+  footer .footer .footer-top .footer-links ul li a {
+    color: #C6C2C2;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  footer .footer .footer-top .footer-links ul li a:hover {
+    color: #fff;
+  }
+  footer .footer .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .footer .footer-bottom p {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  footer .footer .footer-bottom div,
+footer .footer .footer-bottom a {
+    color: #918E8E;
+    font-size: 12px;
+  }
+  footer .footer .footer-bottom a:hover {
+    color: #fff;
+  }
+  footer .footer .footer-bottom .copyright {
+    margin: 18px 0 5px 0;
+  }
 }

@@ -96,6 +96,9 @@ $(function () {
     $('.main-school-left .option-select-cont').eq($(this).index()).addClass('option-select-cont-show');
     $('.main-school-left .option-select-cont').eq($(this).index()).siblings().removeClass('option-select-cont-show');
   });
+  $('.mobile-menu').click(function () {
+    $('.nav').toggle();
+  });
 });
 $(function () {
   selectModel();
