@@ -1,0 +1,285 @@
+.head-specialty {
+  padding: 20px 80px 20px 22px;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.head-specialty img {
+  width: 243px;
+  height: 141px;
+  border-radius: 7px;
+}
+
+.head-specialty-content {
+  margin: 0 0px 0 20px;
+  width: 60%;
+}
+
+.head-specialty-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.head-specialty-title h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #101010;
+  margin-right: 28px;
+}
+.head-specialty-title div span {
+  margin-right: 15px;
+  display: inline-block;
+  padding: 2px 10px;
+  border: 1px solid #02A297;
+  border-radius: 50px;
+  color: #02A297;
+}
+
+.head-specialty-code span,
+.head-specialty-job span,
+.head-specialty-secondary span,
+.head-specialty-nndergraduate span {
+  color: #757373;
+  font-size: 14px;
+  margin-top: 6px;
+}
+.head-specialty-code span:first-child,
+.head-specialty-job span:first-child,
+.head-specialty-secondary span:first-child,
+.head-specialty-nndergraduate span:first-child {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  margin-bottom: -3px;
+  background-color: #02A297;
+}
+
+.head-specialty-job span:first-child {
+  background-color: #3b3b3b;
+}
+
+.head-specialty-secondary span:first-child {
+  background-color: #101010;
+}
+
+.head-specialty-nndergraduate span:first-child {
+  background-color: #576361;
+}
+
+.head-specialty-keifu a {
+  width: 127px;
+  height: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #02a297;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 50px;
+}
+.head-specialty-keifu a span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #3ca605;
+}
+
+.main-specialty {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-specialty .main-specialty-left {
+  background-color: #fff;
+  width: 826px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.main-specialty .main-specialty-left h1 {
+  position: relative;
+  font-size: 20px;
+  color: #3b3b3b;
+  font-weight: 700;
+  padding-bottom: 10px;
+  width: 120px;
+}
+.main-specialty .main-specialty-left h1::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  content: "";
+  border-bottom: 2px solid #02a297;
+}
+.main-specialty .main-content {
+  border-top: 2px solid #e1dfdf;
+}
+.main-specialty .main-content p {
+  font-size: 16px;
+  color: #3b3b3b;
+  margin: 25px 0;
+  text-align: justify;
+  line-height: 30px;
+}
+.main-specialty .main-content .main-tit {
+  position: relative;
+}
+.main-specialty .main-content .main-tit span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #02a297;
+  color: #fff;
+  font-size: 18px;
+  margin-right: 8px;
+}
+.main-specialty .main-content .main-tit strong {
+  font-size: 16px;
+  font-weight: 700;
+  color: #02A297;
+}
+.main-specialty .main-content .main-tit::after {
+  position: absolute;
+  right: 0px;
+  bottom: 14px;
+  content: "";
+  width: 75%;
+  border: 1px dashed #e1dfdf;
+}
+
+.main-specialty-right {
+  width: 352px;
+  box-sizing: border-box;
+}
+
+.main-specialty .main-right-school {
+  margin-top: 0;
+  padding: 20px 15px 20px 15px;
+  background-color: #fff;
+}
+.main-specialty .main-right-school h1 {
+  position: relative;
+  font-size: 20px;
+  color: #3b3b3b;
+  font-weight: 700;
+  padding-bottom: 10px;
+  width: 121px;
+}
+.main-specialty .main-right-school h1::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  content: "";
+  border-bottom: 2px solid #02a297;
+}
+
+.main-right-school-content {
+  border-top: 2px solid #e1dfdf;
+}
+.main-right-school-content ul li a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 98px;
+  padding: 0 10px;
+  background-color: #f7f6f6;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.main-right-school-content ul li a:hover {
+  background-color: #def0ef;
+}
+.main-right-school-content ul li a img {
+  width: 80px;
+  height: 80px;
+}
+
+.main-right-school-title {
+  width: 65%;
+  text-align: center;
+}
+.main-right-school-title p:first-child {
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #101010;
+  margin-bottom: 14px;
+}
+.main-right-school-title p:last-child {
+  width: 100%;
+  text-align: center;
+}
+.main-right-school-title p:last-child span {
+  margin-right: 5px;
+  display: inline-block;
+  padding: 1px 8px;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 1px solid #02a297;
+  color: #02A297;
+}
+.main-right-school-title p:last-child span:last-child {
+  margin-right: 0;
+}
+
+.main-right-specialty {
+  margin-top: 20px;
+  padding: 20px 15px 20px 15px;
+  background-color: #fff;
+}
+.main-right-specialty h1 {
+  position: relative;
+  font-size: 20px;
+  color: #3b3b3b;
+  font-weight: 700;
+  padding-bottom: 10px;
+  width: 80px;
+}
+.main-right-specialty h1::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  content: "";
+  border-bottom: 2px solid #02a297;
+}
+
+.main-right-specialty-content {
+  border-top: 2px solid #e1dfdf;
+}
+.main-right-specialty-content ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main-right-specialty-content ul li a {
+  margin-top: 10px;
+  width: 150px;
+  height: 100%;
+  display: inline-block;
+}
+.main-right-specialty-content ul li a img {
+  width: 150px;
+  height: 87px;
+  border-radius: 7px;
+}
+.main-right-specialty-content ul li a p {
+  width: 95%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #101010;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.main-right-specialty-content ul li a:hover p {
+  color: #02A297;
+}
