@@ -97,6 +97,12 @@ $(function () {
     $('.main-school-left .option-select-cont').eq($(this).index()).siblings().removeClass('option-select-cont-show');
   });
   $('#mmenu').click(function () {
+    if ($('.search-box').css('display') === 'block') {
+      $('#squit').hide();
+      $('#ssearch').show();
+      $('.search-box').hide();
+    }
+
     $(this).hide();
     $('#mquit').show();
     $('.nav').show();
@@ -107,6 +113,12 @@ $(function () {
     $('.nav').hide();
   });
   $('#ssearch').click(function () {
+    if ($('.nav').css('display') === 'block') {
+      $('#mquit').hide();
+      $('#mmenu').show();
+      $('.nav').hide();
+    }
+
     $(this).hide();
     $('#squit').show();
     $('.search-box').show();

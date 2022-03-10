@@ -104,6 +104,11 @@ $(function () {
 
 
 	$('#mmenu').click(function () {
+		if ($('.search-box').css('display') === 'block') {
+			$('#squit').hide()
+			$('#ssearch').show()
+			$('.search-box').hide()
+		}
 		$(this).hide()
 		$('#mquit').show()
 		$('.nav').show()
@@ -116,6 +121,11 @@ $(function () {
 	})
 
 	$('#ssearch').click(function () {
+		if ($('.nav').css('display') === 'block') {
+			$('#mquit').hide()
+			$('#mmenu').show()
+			$('.nav').hide()
+		}
 		$(this).hide()
 		$('#squit').show()
 		$('.search-box').show()
