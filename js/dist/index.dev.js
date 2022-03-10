@@ -96,8 +96,30 @@ $(function () {
     $('.main-school-left .option-select-cont').eq($(this).index()).addClass('option-select-cont-show');
     $('.main-school-left .option-select-cont').eq($(this).index()).siblings().removeClass('option-select-cont-show');
   });
-  $('.mobile-menu').click(function () {
-    $('.nav').toggle();
+  $('#mmenu').click(function () {
+    $(this).hide();
+    $('#mquit').show();
+    $('.nav').show();
+  });
+  $('#mquit').click(function () {
+    $(this).hide();
+    $('#mmenu').show();
+    $('.nav').hide();
+  });
+  $('#ssearch').click(function () {
+    $(this).hide();
+    $('#squit').show();
+    $('.search-box').show();
+  });
+  $('#squit').click(function () {
+    $(this).hide();
+    $('#ssearch').show();
+    $('.search-box').hide();
+  });
+  $('.pop-search-close').click(function () {
+    $('#squit').hide();
+    $('#ssearch').show();
+    $('.search-box').hide();
   });
 });
 $(function () {

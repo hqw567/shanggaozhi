@@ -1,228 +1,228 @@
 .school-sort {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 20px;
-    border-radius: 7px;
-    box-shadow: 0px 1px 9px 6px rgba(0, 0, 0, 0.08);
-    background-color: #fff;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 20px;
+	border-radius: 7px;
+	box-shadow: 0px 1px 9px 6px rgba(0, 0, 0, 0.08);
+	background-color: #fff;
 
-    div {
-        display: flex;
-        height: 50px;
-        line-height: 50px;
-        border-bottom: 1px solid #E1DFDF;
+	div {
+		display: flex;
+		height: 50px;
+		line-height: 50px;
+		border-bottom: 1px solid #E1DFDF;
 
-        &:last-child {
-            border-bottom: 0;
-        }
+		&:last-child {
+			border-bottom: 0;
+		}
 
-        p {
-            font-size: 16px;
-            font-weight: 700;
-            color: #101010;
-        }
+		p {
+			font-size: 16px;
+			font-weight: 700;
+			color: #101010;
+		}
 
-        ul {
-            display: flex;
+		ul {
+			display: flex;
 
-            li {
-                margin-right: 10px;
+			li {
+				margin-right: 10px;
 
-                a {
-                    padding: 5px 10px;
-                    font-size: 16px;
-                    color: #575656;
+				a {
+					padding: 5px 10px;
+					font-size: 16px;
+					color: #575656;
 
-                    &:last-child {
-                        margin-right: 0;
-                    }
+					&:last-child {
+						margin-right: 0;
+					}
 
-                    &:hover {
-                        background-color: #02a297;
-                        border-radius: 50px;
-                        color: #fff;
-                        font-weight: 700;
-                    }
+					&:hover {
+						background-color: #02a297;
+						border-radius: 50px;
+						color: #fff;
+						font-weight: 700;
+					}
 
-                }
-            }
-        }
-    }
+				}
+			}
+		}
+	}
 }
 
 .school-main {
-    margin-top: 40px;
+	margin-top: 40px;
 
-    .school-main-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 5px;
-        border-bottom: 2px solid #e1dfdf;
+	.school-main-title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 5px;
+		border-bottom: 2px solid #e1dfdf;
 
-        h1 {
-            position: relative;
-            height: 35px;
-            line-height: 35px;
-            font-size: 24px;
-            color: #02a297;
-            font-weight: 700;
+		h1 {
+			position: relative;
+			height: 35px;
+			line-height: 35px;
+			font-size: 24px;
+			color: #02a297;
+			font-weight: 700;
 
-            &::before {
-                content: '';
-                position: absolute;
-                bottom: -7px;
-                left: 0;
-                width: 100%;
-                height: 2px;
-                background-color: #02a297;
-            }
-        }
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: -7px;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: #02a297;
+			}
+		}
 
 
 
-    }
+	}
 
 
 
 }
 
 .school-main-title-right {
-    span {
-        a {
-            display: inline-block;
-            margin-left: 25px;
-            font-size: 16px;
-            color: #757373;
+	span {
+		a {
+			display: inline-block;
+			margin-left: 25px;
+			font-size: 16px;
+			color: #757373;
 
-            &:hover {
-                color: #02A297;
-            }
-        }
-    }
+			&:hover {
+				color: #02A297;
+			}
+		}
+	}
 }
 
 .school-main-content {
 
 
-    ul {
-        li {
-            margin-top: 20px;
+	ul {
+		li {
+			margin-top: 20px;
 
 
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: 147px;
-            box-sizing: border-box;
-            padding: 0 30px;
-            background-color: #fff;
-            border: 1px solid #DEF0EF;
-            border-radius: 7px;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			height: 147px;
+			box-sizing: border-box;
+			padding: 0 30px;
+			background-color: #fff;
+			border: 1px solid #DEF0EF;
+			border-radius: 7px;
 
-            &:hover {
-                background-color: #DEF0EF;
-            }
+			&:hover {
+				background-color: #DEF0EF;
+			}
 
-            img {
-                width: 98px;
-                height: 98px;
-                margin-right: 15px;
-            }
+			img {
+				width: 98px;
+				height: 98px;
+				margin-right: 15px;
+			}
 
 
 
-        }
-    }
+		}
+	}
 
-    .nav-page {
-        border-top: 0;
-        padding: 40px 0 40px 0;
-    }
+	.nav-page {
+		border-top: 0;
+		padding: 40px 0 40px 0;
+	}
 }
 
 .school-main-content-center {
-    width: 70%;
+	width: 70%;
 
 }
 
 .school-main-content-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
 
-    h1 {
-        font-size: 20px;
-        color: #101010;
-        margin-right: 20px;
-    }
+	h1 {
+		font-size: 20px;
+		color: #101010;
+		margin-right: 20px;
+	}
 
-    .school-main-content-tags {
-        span {
-            display: inline-block;
-            margin-right: 15px;
-            padding: 2px 10px;
-            background-color: #fff;
-            border-radius: 50px;
-            color: #02A297;
-            border: 1px solid #02A297;
-        }
-    }
+	.school-main-content-tags {
+		span {
+			display: inline-block;
+			margin-right: 15px;
+			padding: 2px 10px;
+			background-color: #fff;
+			border-radius: 50px;
+			color: #02A297;
+			border: 1px solid #02A297;
+		}
+	}
 }
 
 .school-main-content-bottom {
-    display: flex;
-    align-content: center;
+	display: flex;
+	align-content: center;
 }
 
 .school-main-content-time,
 .school-main-content-address {
 
-    span {
-        color: #757373;
-        font-size: 14px;
+	span {
+		color: #757373;
+		font-size: 14px;
 
-        &:first-child {
-            display: inline-block;
-            margin-right: 5px;
-            margin-bottom: -3px;
-            background-color: #3ca605;
-            width: 18px;
-            height: 18px;
-        }
-    }
+		&:first-child {
+			display: inline-block;
+			margin-right: 5px;
+			margin-bottom: -3px;
+			background-color: #3ca605;
+			width: 18px;
+			height: 18px;
+		}
+	}
 }
 
 .school-main-content-address {
 
-    span {
+	span {
 
-        &:first-child {
+		&:first-child {
 
-            margin-left: 22px;
-            background-color: #575656;
+			margin-left: 22px;
+			background-color: #575656;
 
-        }
-    }
+		}
+	}
 }
 
 .school-main-content-button {
 
-    a {
-        display: inline-block;
-        margin-right: 20px;
-        padding: 8px 12px;
-        border-radius: 50px;
-        background-color: #02a297;
-        color: #fff;
-        font-size: 18px;
+	a {
+		display: inline-block;
+		margin-right: 20px;
+		padding: 8px 12px;
+		border-radius: 50px;
+		background-color: #02a297;
+		color: #fff;
+		font-size: 18px;
 
-        &:last-child {
-            background-color: #fff;
-            border: 1px solid #EE1F1F;
-            color: #EE1F1F;
-            margin-right: 0;
-        }
-    }
+		&:last-child {
+			background-color: #fff;
+			border: 1px solid #EE1F1F;
+			color: #EE1F1F;
+			margin-right: 0;
+		}
+	}
 
 }

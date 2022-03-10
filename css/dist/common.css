@@ -354,6 +354,9 @@ header .wrap .input-submit span svg {
 header .wrap .input-submit span svg path {
   fill: #fff;
 }
+header .wrap .pop-search {
+  display: none;
+}
 header .wrap .zixun a {
   display: inline-block;
   width: 95px;
@@ -829,14 +832,54 @@ header .wrap .logo a img {
   header .wrap nav .nav > li:hover .head-dropdown {
     display: block;
   }
+  header .wrap .search-box {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f7f6f6;
+    display: none;
+  }
+  header .wrap .pop-search {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+  header .wrap .pop-search-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+  }
+  header .wrap .pop-search-tags a {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 3px 10px;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #7B7979;
+  }
+  header .wrap .pop-search-close {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  header .wrap .pop-search-close svg path {
+    fill: #02a2971c;
+  }
   header .wrap .search {
     display: block;
-    display: none;
     width: 222px;
     height: 36px;
-    line-height: 36px;
+    line-height: 35px;
     border: 1px solid #02A297;
     border-radius: 20px;
+    margin: 40px auto;
+    background-color: #fff;
   }
   header .wrap .search form {
     display: flex;
@@ -894,6 +937,9 @@ header .wrap .logo a img {
     width: 100%;
     height: 100%;
   }
+  header .wrap .mobile-head .mobile-search svg:last-child {
+    display: none;
+  }
   header .wrap .mobile-head .mobile-search svg path {
     fill: #02A297;
   }
@@ -905,6 +951,9 @@ header .wrap .logo a img {
   header .wrap .mobile-head .mobile-menu svg {
     width: 100%;
     height: 100%;
+  }
+  header .wrap .mobile-head .mobile-menu svg:last-child {
+    display: none;
   }
   header .wrap .mobile-head .mobile-menu svg path {
     fill: #02A297;
