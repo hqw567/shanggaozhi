@@ -548,11 +548,14 @@ footer {
 	padding: 20px 0 35px 0;
 	text-align: center;
 
+
 	a {
 		display: inline-block;
 		color: #757373;
 		font-size: 14px;
-		margin-left: 15px;
+		margin: 0 5px;
+
+
 	}
 
 	.nav-page-pre,
@@ -584,6 +587,7 @@ footer {
 			background-color: #02a297;
 		}
 	}
+
 }
 
 
@@ -794,6 +798,92 @@ footer {
 		svg {
 			width: 90%;
 			height: 90%;
+		}
+	}
+
+	#tab {
+		position: relative;
+
+		ul {
+			display: block;
+			display: none;
+			position: absolute;
+			right: 0px;
+			top: 26px;
+			width: 100%;
+
+			li {
+				position: relative;
+				top: 0;
+				left: 0;
+				cursor: pointer;
+				font-size: 14px;
+				color: #eee;
+				width: 100%;
+				height: 25px;
+				line-height: 25px;
+				box-sizing: border-box;
+				text-align: center;
+				background-color: #888;
+
+			}
+		}
+	}
+
+	.tab-default {
+		display: block;
+		width: 95px;
+		height: 25px;
+		line-height: 25px;
+		text-align: center;
+		background-color: #fff;
+		font-size: 14px;
+		color: #888888;
+		border-radius: 5px;
+
+		&:after {
+			position: relative;
+			top: 13px;
+			right: -4px;
+			content: "";
+			width: 0;
+			height: 0;
+			border-width: 5px 5px 0;
+			border-style: solid;
+			border-color: #666 transparent transparent;
+			margin-left: 5px;
+		}
+	}
+
+	.nav-path {
+		display: flex;
+		align-items: center;
+		margin-top: 105px;
+		margin-bottom: 20px;
+		font-size: 14px;
+		color: #B5B1B1;
+		padding: 0 20px;
+
+		.nav-path-ico {
+			width: 22px;
+			height: 22px;
+			background-color: #B5B1B1;
+		}
+
+		a {
+			display: inline-block;
+			font-size: 14px;
+			color: #B5B1B1;
+			margin: 0 5px;
+
+		}
+
+		&:first-child a {
+			margin: 0;
+		}
+
+		&:last-child a {
+			margin: 0;
 		}
 	}
 
@@ -1241,7 +1331,3 @@ footer {
 		}
 	}
 }
-
-@media only screen and (min-width: 240px) and(max-width:319px) {}
-
-@media only screen and(max-width: 239px) {}

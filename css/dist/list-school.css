@@ -168,3 +168,223 @@
   color: #EE1F1F;
   margin-right: 0;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .school-sort {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
+    background-color: transparent;
+    display: flex;
+    position: fixed;
+    top: 45px;
+    left: 0;
+    z-index: 1;
+    background-color: #02a297;
+  }
+  .school-sort div {
+    width: 100%;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 0px solid #E1DFDF;
+    background-color: #02a297;
+    text-align: left;
+  }
+  .school-sort div:last-child {
+    border-bottom: 0;
+  }
+  .school-sort div p {
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+  }
+  .school-sort div p::before {
+    position: absolute;
+    top: 44%;
+    left: 77px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #02a297;
+  }
+  .school-sort div p::after {
+    position: absolute;
+    top: 45%;
+    left: 90px;
+    content: "";
+    border-width: 6px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+  }
+  .school-sort div ul {
+    display: block;
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+  }
+  .school-sort div ul li {
+    margin-right: 0px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 30px;
+  }
+  .school-sort div ul li a {
+    padding: 0px;
+    font-size: 14px;
+    color: #101010;
+  }
+  .school-sort div ul li a:last-child {
+    margin-right: 0;
+  }
+  .school-sort div ul li a:hover {
+    background-color: transparent;
+    border-radius: 0px;
+    color: #101010;
+    font-weight: 700;
+  }
+
+  .school-main {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .school-main .school-main-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e1dfdf;
+  }
+  .school-main .school-main-title h1 {
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    color: #02a297;
+    font-weight: 700;
+  }
+  .school-main .school-main-title h1::before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #02a297;
+  }
+
+  .school-main-title-right span a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #757373;
+  }
+  .school-main-title-right span a:hover {
+    color: #02A297;
+  }
+
+  .school-main-content ul li {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    background-color: #fff;
+    border: 1px solid #DEF0EF;
+    border-radius: 7px;
+  }
+  .school-main-content ul li:hover {
+    background-color: #DEF0EF;
+  }
+  .school-main-content ul li img {
+    width: 27%;
+    height: auto;
+    margin-right: 15px;
+    margin-left: 0px;
+  }
+  .school-main-content .nav-page {
+    border-top: 0;
+    padding: 40px 0 40px 0;
+  }
+
+  .school-main-content-center {
+    width: 70%;
+  }
+
+  .school-main-content-title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+  }
+  .school-main-content-title h1 {
+    font-size: 16px;
+    color: #101010;
+    margin-right: 0px;
+  }
+  .school-main-content-title .school-main-content-tags span {
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 8px;
+    padding: 1px 5px;
+    background-color: #fff;
+    border-radius: 50px;
+    color: #02A297;
+    border: 1px solid #02A297;
+  }
+
+  .school-main-content-bottom {
+    display: flex;
+    align-content: center;
+    display: none;
+  }
+
+  .school-main-content-time span,
+.school-main-content-address span {
+    color: #757373;
+    font-size: 14px;
+  }
+  .school-main-content-time span:first-child,
+.school-main-content-address span:first-child {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: -3px;
+    background-color: #3ca605;
+    width: 18px;
+    height: 18px;
+  }
+
+  .school-main-content-address span:first-child {
+    margin-left: 22px;
+    background-color: #575656;
+  }
+
+  .school-main-content-button {
+    display: none;
+  }
+  .school-main-content-button a {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 8px 12px;
+    border-radius: 50px;
+    background-color: #02a297;
+    color: #fff;
+    font-size: 18px;
+  }
+  .school-main-content-button a:last-child {
+    background-color: #fff;
+    border: 1px solid #EE1F1F;
+    color: #EE1F1F;
+    margin-right: 0;
+  }
+}
