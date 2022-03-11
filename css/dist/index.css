@@ -1136,6 +1136,7 @@ article.wrap .list-content ul li a img {
   .specialty-title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 5px;
     border-bottom: 2px solid #e1dfdf;
   }
@@ -1260,6 +1261,7 @@ article.wrap .list-content ul li a img {
   .list-title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 5px;
     border-bottom: 2px solid #e1dfdf;
   }

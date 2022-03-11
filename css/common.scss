@@ -1158,7 +1158,7 @@ footer {
 				line-height: 25px;
 				box-sizing: border-box;
 				text-align: center;
-				background-color: #888;
+				background-color: #91dad5;
 
 			}
 		}
@@ -1229,7 +1229,7 @@ footer {
 		border: 0px solid #02A297;
 		background-color: #DAF9F7;
 		color: #fff !important;
-		background-color: #000 !important;
+		background-color: #02A297 !important;
 
 		&::before {
 			position: absolute;
@@ -1618,18 +1618,23 @@ footer {
 				&:nth-child(2) a::before {
 					background-image: url(../../images/svg/school.svg);
 				}
+
 				&:nth-child(3) a::before {
 					background-image: url(../../images/svg/specialty.svg);
 				}
+
 				&:nth-child(4) a::before {
 					background-image: url(../../images/svg/test-info.svg);
 				}
+
 				&:nth-child(5) a::before {
 					background-image: url(../../images/svg/article.svg);
 				}
+
 				&:nth-child(6) a::before {
 					background-image: url(../../images/svg/trend.svg);
 				}
+
 				.head-dropdown {
 					display: block;
 					position: static;
