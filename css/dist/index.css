@@ -70,7 +70,6 @@
   font-weight: 700;
   text-align: center;
   color: #A6A2A2;
-  transform: rotate(3deg);
 }
 .main-tleft-text li a span:last-child {
   position: relative;
@@ -706,7 +705,6 @@ article.wrap .list-content ul li a img {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
-  transform: rotate(3deg);
 }
 
 .specialty-recommend {
@@ -763,77 +761,6 @@ article.wrap .list-content ul li a img {
 }
 .specialty-recommend-content ul li:last-child a {
   border-bottom: 0;
-}
-
-.popular {
-  padding: 20px 18px 20px 18px;
-  background-color: #fff;
-  margin-top: 30px;
-}
-
-.popular-title {
-  display: flex;
-  justify-content: space-around;
-  border-bottom: 1px dotted #bbb;
-  padding-bottom: 5px;
-}
-.popular-title div {
-  position: relative;
-  cursor: pointer;
-  font-size: 16px;
-  color: #3B3B3B;
-  width: 100px;
-  height: 35px;
-  line-height: 35px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.popular-content ul {
-  display: none;
-}
-.popular-content ul li a {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  color: #101010;
-  margin-top: 22px;
-}
-.popular-content ul li a .popular-conten-num {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #e1dfdf;
-  text-align: center;
-  line-height: 20px;
-  color: #fff;
-  margin-right: 5px;
-}
-.popular-content ul li a p {
-  width: 210px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.popular-content ul li a .popular-conten-read {
-  font-size: 12px;
-  color: #b7b4b4;
-  white-space: nowrap;
-}
-.popular-content ul li a .popular-conten-read dd {
-  display: inline-block;
-}
-.popular-content ul li:nth-child(1) .popular-conten-num {
-  background-color: #db4646;
-}
-.popular-content ul li:nth-child(2) .popular-conten-num {
-  background-color: #fb6f0b;
-}
-.popular-content ul li:nth-child(3) .popular-conten-num {
-  background-color: #f4c47f;
 }
 
 /*1280分辨率以上（大于1200px）*/
@@ -901,7 +828,6 @@ article.wrap .list-content ul li a img {
     font-weight: 700;
     text-align: center;
     color: #A6A2A2;
-    transform: rotate(3deg);
   }
   .main-tleft-text li a span:last-child {
     position: relative;
@@ -1565,7 +1491,6 @@ article.wrap .list-content ul li a img {
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    transform: rotate(3deg);
   }
 
   .specialty-recommend {
@@ -1622,80 +1547,5 @@ article.wrap .list-content ul li a img {
   }
   .specialty-recommend-content ul li:last-child a {
     border-bottom: 0;
-  }
-
-  .popular {
-    padding: 20px 18px 20px 18px;
-    background-color: #fff;
-    margin-top: 30px;
-  }
-
-  .popular-title {
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px dotted #bbb;
-    padding-bottom: 5px;
-  }
-  .popular-title div {
-    position: relative;
-    cursor: pointer;
-    font-size: 16px;
-    color: #3B3B3B;
-    width: 100px;
-    height: 35px;
-    line-height: 35px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  .popular-content ul {
-    display: none;
-    width: 100%;
-  }
-  .popular-content ul li {
-    width: 100%;
-  }
-  .popular-content ul li a {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-    color: #101010;
-    margin-top: 22px;
-  }
-  .popular-content ul li a .popular-conten-num {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #e1dfdf;
-    text-align: center;
-    line-height: 20px;
-    color: #fff;
-    margin-right: 5px;
-  }
-  .popular-content ul li a p {
-    width: 73%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  .popular-content ul li a .popular-conten-read {
-    font-size: 12px;
-    color: #b7b4b4;
-    white-space: nowrap;
-  }
-  .popular-content ul li a .popular-conten-read dd {
-    display: inline-block;
-  }
-  .popular-content ul li:nth-child(1) .popular-conten-num {
-    background-color: #db4646;
-  }
-  .popular-content ul li:nth-child(2) .popular-conten-num {
-    background-color: #fb6f0b;
-  }
-  .popular-content ul li:nth-child(3) .popular-conten-num {
-    background-color: #f4c47f;
   }
 }

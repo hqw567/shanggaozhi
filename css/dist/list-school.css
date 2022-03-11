@@ -143,14 +143,16 @@
   display: inline-block;
   margin-right: 5px;
   margin-bottom: -3px;
-  background-color: #3ca605;
+  background-image: url(../../images/svg/list-time.svg);
+  background-size: 100% 100%;
   width: 18px;
   height: 18px;
 }
 
 .school-main-content-address span:first-child {
   margin-left: 22px;
-  background-color: #575656;
+  background-image: url(../../images/svg/list-address.svg);
+  background-size: 100% 100%;
 }
 
 .school-main-content-button a {
@@ -359,14 +361,16 @@
     display: inline-block;
     margin-right: 5px;
     margin-bottom: -3px;
-    background-color: #3ca605;
+    background-image: url(../../images/svg/list-time.svg);
+    background-size: 100% 100%;
     width: 18px;
     height: 18px;
   }
 
   .school-main-content-address span:first-child {
     margin-left: 22px;
-    background-color: #575656;
+    background-image: url(../../images/svg/list-address.svg);
+    background-size: 100% 100%;
   }
 
   .school-main-content-button {

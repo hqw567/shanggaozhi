@@ -27,8 +27,8 @@
 	<header>
 		<div class="wrap">
 			<h1 class="logo">
-				<a href="/">
-					<img src="./images/logo.png" alt="上高职">
+				<a href="./index.html">
+					<img src="./images/logo.svg" alt="上高职">
 					<strong class="display-n">上高职</strong>
 				</a>
 			</h1>
@@ -82,50 +82,81 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="search model-box">
-				<form action="https://www.shangzhixiao.com/e/search/index.php" target="_blank" method="post" name="schform"
-					id="schform" autocomplete="off">
-					<input type="hidden" value="title,skey" name="show">
-					<input class="tempid" name="tempid" value="1" type="hidden">
-					<input class="classid" name="classid" value="4,9,10,11,12" type="hidden">
-					<!-- <select name="classid" class="dropdown-search selected">
-                        <option value="4,9,10,11,12">资讯</option>
-                        <option value="7">学校</option>
-                        <option value="5">专业</option>
-                    </select> -->
-					<div id="box" class="model-select-text" data-value="4,9,10,11,12">资讯</div>
-					<ul class="model-select-option">
-						<li data-option="4,9,10,11,12" class="data-selected">资讯</li>
-						<li data-option="7">学校</li>
-						<li data-option="5">专业</li>
-					</ul>
-					<input name="keyboard" type="text" id="keyboard" class="input-search" value="" placeholder="请输入关键词">
-					<button id="search-submit" type="submit" class="input-submit" name="submit"><span><svg t="1646791607394"
-								class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2116"
-								width="64" height="64">
-								<path
-									d="M469.333333 768c-166.4 0-298.666667-132.266667-298.666666-298.666667s132.266667-298.666667 298.666666-298.666666 298.666667 132.266667 298.666667 298.666666-132.266667 298.666667-298.666667 298.666667z m0-85.333333c119.466667 0 213.333333-93.866667 213.333334-213.333334s-93.866667-213.333333-213.333334-213.333333-213.333333 93.866667-213.333333 213.333333 93.866667 213.333333 213.333333 213.333334z m251.733334 0l119.466666 119.466666-59.733333 59.733334-119.466667-119.466667 59.733334-59.733333z"
-									fill="#444444" p-id="2117"></path>
-							</svg></span></button>
+			<div class="search-box">
+				<div class="search model-box">
+					<form action="https://www.shangzhixiao.com/e/search/index.php" target="_blank" method="post"
+						name="schform" id="schform" autocomplete="off">
+						<input type="hidden" value="title,skey" name="show">
+						<input class="tempid" name="tempid" value="1" type="hidden">
+						<input class="classid" name="classid" value="4,9,10,11,12" type="hidden">
+						<div id="box" class="model-select-text" data-value="4,9,10,11,12">资讯</div>
+						<ul class="model-select-option">
+							<li data-option="4,9,10,11,12" class="data-selected">资讯</li>
+							<li data-option="7">学校</li>
+							<li data-option="5">专业</li>
+						</ul>
+						<input name="keyboard" type="text" id="keyboard" class="input-search" value=""
+							placeholder="请输入关键词">
+						<button id="search-submit" type="submit" class="input-submit" name="submit"><span><svg
+									t="1646791607394" class="icon" viewBox="0 0 1024 1024" version="1.1"
+									xmlns="http://www.w3.org/2000/svg" p-id="2116" width="64" height="64">
+									<path
+										d="M469.333333 768c-166.4 0-298.666667-132.266667-298.666666-298.666667s132.266667-298.666667 298.666666-298.666666 298.666667 132.266667 298.666667 298.666666-132.266667 298.666667-298.666667 298.666667z m0-85.333333c119.466667 0 213.333333-93.866667 213.333334-213.333334s-93.866667-213.333333-213.333334-213.333333-213.333333 93.866667-213.333333 213.333333 93.866667 213.333333 213.333333 213.333334z m251.733334 0l119.466666 119.466666-59.733333 59.733334-119.466667-119.466667 59.733334-59.733333z"
+										fill="#444444" p-id="2117"></path>
+								</svg></span></button>
 
-				</form>
+					</form>
+				</div>
+				<div class="pop-search">
+					<div class="pop-search-title">热门搜索：</div>
+					<div class="pop-search-tags">
+						<a href="#" target="_blank">学校</a>
+						<a href="#" target="_blank">中专专业</a>
+						<a href="#" target="_blank">热门中职学校</a>
+						<a href="#" target="_blank">湖南中职学校</a>
+						<a href="#" target="_blank">女生专业</a>
+					</div>
+					<div class="pop-search-close">
+						<svg t="1646880684362" class="icon" viewBox="0 0 1024 1024" version="1.1"
+							xmlns="http://www.w3.org/2000/svg" p-id="4299" width="128" height="128">
+							<path
+								d="M512 451.669333l211.2-211.2 60.330667 60.330667-211.2 211.2 211.2 211.2-60.330667 60.330667-211.2-211.2-211.2 211.2-60.330667-60.330667 211.2-211.2-211.2-211.2L300.8 240.469333z"
+								p-id="4300"></path>
+						</svg>
+					</div>
+				</div>
+
 			</div>
 			<div class="zixun">
 				<a href="#">在线咨询</a>
 			</div>
 			<div class="mobile-head">
-				<div class="mobile-search"><svg t="1646791607394" class="icon" viewBox="0 0 1024 1024" version="1.1"
+				<div class="mobile-search">
+					<svg id="ssearch" t="1646791607394" class="icon" viewBox="0 0 1024 1024" version="1.1"
 						xmlns="http://www.w3.org/2000/svg" p-id="2116" width="64" height="64">
 						<path
 							d="M469.333333 768c-166.4 0-298.666667-132.266667-298.666666-298.666667s132.266667-298.666667 298.666666-298.666666 298.666667 132.266667 298.666667 298.666666-132.266667 298.666667-298.666667 298.666667z m0-85.333333c119.466667 0 213.333333-93.866667 213.333334-213.333334s-93.866667-213.333333-213.333334-213.333333-213.333333 93.866667-213.333333 213.333333 93.866667 213.333333 213.333333 213.333334z m251.733334 0l119.466666 119.466666-59.733333 59.733334-119.466667-119.466667 59.733334-59.733333z"
 							fill="#444444" p-id="2117"></path>
-					</svg></div>
+					</svg>
+					<svg id="squit" t="1646874676621" class="icon" viewBox="0 0 1024 1024" version="1.1"
+						xmlns="http://www.w3.org/2000/svg" p-id="3496" width="64" height="64">
+						<path
+							d="M512 451.669333l211.2-211.2 60.330667 60.330667-211.2 211.2 211.2 211.2-60.330667 60.330667-211.2-211.2-211.2 211.2-60.330667-60.330667 211.2-211.2-211.2-211.2L300.8 240.469333z"
+							p-id="3497"></path>
+					</svg>
+				</div>
 				<div class="mobile-menu">
-					<svg t="1646791475513" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
-						p-id="1709" width="64" height="64">
+					<svg id="mmenu" t="1646791475513" class="icon" viewBox="0 0 1024 1024" version="1.1"
+						xmlns="http://www.w3.org/2000/svg" p-id="1709" width="64" height="64">
 						<path
 							d="M905.848832 706.56c22.84544 0 41.744384 18.75968 41.744384 41.603072 0 23.6032-18.898944 42.364928-41.744384 42.364928L301.010944 790.528c-22.833152 0-41.728-18.75968-41.728-42.364928 0-22.843392 18.896896-41.603072 41.728-41.603072L905.848832 706.56zM139.56096 215.488512c29.927424 0 53.557248 24.406016 53.557248 53.54496 0 29.927424-23.631872 53.559296-53.557248 53.559296C110.422016 322.592768 86.016 298.960896 86.016 269.033472 86.016 239.894528 110.422016 215.488512 139.56096 215.488512L139.56096 215.488512zM301.010944 317.44c-22.833152 0-41.728-19.13856-41.728-41.984s18.896896-41.984 41.728-41.984l604.837888 0c22.84544 0 41.744384 19.13856 41.744384 41.984s-18.898944 41.984-41.744384 41.984L301.010944 317.44zM301.010944 569.344c-22.833152 0-41.728-19.140608-41.728-41.984s18.896896-41.984 41.728-41.984l604.837888 0c22.84544 0 41.744384 19.140608 41.744384 41.984s-18.898944 41.984-41.744384 41.984L301.010944 569.344zM139.56096 458.835968c29.927424 0 53.557248 23.63392 53.557248 53.557248 0 29.140992-23.631872 53.557248-53.557248 53.557248C110.422016 565.950464 86.016 541.534208 86.016 512.393216 86.016 482.46784 110.422016 458.835968 139.56096 458.835968L139.56096 458.835968zM139.56096 701.407232c29.927424 0 53.557248 24.420352 53.557248 53.559296 0 29.925376-23.631872 53.54496-53.557248 53.54496C110.422016 808.511488 86.016 784.893952 86.016 754.968576 86.016 725.827584 110.422016 701.407232 139.56096 701.407232L139.56096 701.407232z"
 							p-id="1710"></path>
+					</svg>
+					<svg id="mquit" t="1646874676621" class="icon" viewBox="0 0 1024 1024" version="1.1"
+						xmlns="http://www.w3.org/2000/svg" p-id="3496" width="64" height="64">
+						<path
+							d="M512 451.669333l211.2-211.2 60.330667 60.330667-211.2 211.2 211.2 211.2-60.330667 60.330667-211.2-211.2-211.2 211.2-60.330667-60.330667 211.2-211.2-211.2-211.2L300.8 240.469333z"
+							p-id="3497"></path>
 					</svg>
 				</div>
 			</div>
