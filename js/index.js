@@ -52,6 +52,7 @@ $(function () {
 			if ($('.tab-default').css('display') === 'block') {
 				TabUl.hide()
 			}
+
 		})
 
 	}
@@ -169,7 +170,22 @@ $(function () {
 	})
 
 	$('.specialty-sort-title').click(function () {
-		$('.specialty-sort-content').slideToggle()
+		$('.specialty-sort-content').slideToggle('normal', function () {
+			let _this = $(this)
+			$(window).scroll(function () {
+				_this.slideUp()
+			})
+		})
+	})
+
+	$('.school-sort div p').click(function () {
+		let _this = $(this)
+		$('.school-sort div p').not(_this).siblings('ul').hide()
+		_this.siblings('ul').slideToggle('normal', function () {
+			$(window).scroll(function () {
+				_this.siblings('ul').slideUp()
+			})
+		})
 	})
 })
 

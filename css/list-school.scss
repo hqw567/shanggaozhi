@@ -246,9 +246,7 @@
 		background-color: #02a297;
 
 		div {
-
 			width: 100%;
-			// flex: 1;
 			display: block;
 			height: 45px;
 			line-height: 45px;
@@ -258,10 +256,6 @@
 
 			&:last-child {
 				border-bottom: 0;
-			}
-
-			&:nth-child(2) {
-				// border-radius: 1px solid #02a297;
 			}
 
 			p {
@@ -297,18 +291,29 @@
 				display: none;
 				background-color: #fff;
 				position: absolute;
+				top: 45px;
+				left: 0px;
+				float: left;
 				width: 100%;
-
+				padding: 10px 30px 10px 30px;
+				height: 350px;
+				overflow: auto;
+				box-shadow: 0px 0px 5px #b7b7b7;
 				li {
+					width: 100%;
 					margin-right: 0px;
 					height: 35px;
 					line-height: 35px;
-					padding-left: 30px;
+					padding-left: 0px;
+					border-bottom: 1px dotted #E1DFDF;
 
 					a {
+						display: block;
 						padding: 0px;
 						font-size: 14px;
 						color: #101010;
+						width: 100%;
+						height: 100%;
 
 						&:last-child {
 							margin-right: 0;
