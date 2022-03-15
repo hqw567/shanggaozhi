@@ -6,27 +6,24 @@
 	box-sizing: border-box;
 	box-shadow: 0px 1px 9px 6px rgba(198, 194, 194, 61);
 
-
 	.specialty-sort-title {
 		margin-top: 30px;
 		font-weight: 700;
 		white-space: nowrap;
 		font-size: 18px;
-		color: #3B3B3B;
+		color: #3b3b3b;
 		height: 100%;
 	}
-
-
 }
 
 .specialty-sort-content {
 	ul {
-		margin-top: 20px;
+		margin-top: 17px;
 
 		li {
 			float: left;
 			margin-left: 5px;
-			margin-top: 10px;
+			margin-top: 15px;
 
 			a {
 				white-space: nowrap;
@@ -64,7 +61,7 @@
 		font-weight: 700;
 
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			bottom: -7px;
 			left: 0;
@@ -73,9 +70,6 @@
 			background-color: #02a297;
 		}
 	}
-
-
-
 }
 
 .all-specialty-title-right {
@@ -87,22 +81,19 @@
 			color: #757373;
 
 			&:hover {
-				color: #02A297;
+				color: #02a297;
 			}
 		}
 	}
 }
 
 .all-specialty-content {
-
 	ul {
-
 		padding-bottom: 18px;
 		display: flex;
 		flex-wrap: wrap;
 
 		li {
-
 			margin-right: 18px;
 
 			&:nth-child(5n) {
@@ -113,14 +104,13 @@
 				box-sizing: border-box;
 				padding: 20px;
 				background-color: #fff;
-				box-shadow: 0px 0px 10px rgba(0, 0, 0, .15);
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 				display: inline-block;
 				border-radius: 15px;
 				margin-top: 25px;
 				width: 225px;
 				height: 175px;
 				overflow: hidden;
-
 
 				.all-specialty-pic {
 					width: 100%;
@@ -132,13 +122,12 @@
 				img {
 					width: 100%;
 					height: 100%;
-					transition: all .5s ease-out;
+					transition: all 0.5s ease-out;
 				}
 
 				&:hover img {
-					transform: scale(1.1)
+					transform: scale(1.1);
 				}
-
 
 				.all-specialty-content-title {
 					width: 100%;
@@ -154,7 +143,7 @@
 				}
 
 				&:hover .all-specialty-content-title {
-					color: #02A297;
+					color: #02a297;
 				}
 			}
 		}
@@ -163,7 +152,6 @@
 
 @media only screen and (min-width: 320px) and(max-width: 479px) {
 	.specialty-sort {
-
 		padding: 0px;
 		display: block;
 
@@ -184,7 +172,7 @@
 			white-space: nowrap;
 
 			font-size: 14px;
-			color: #DEF0EF;
+			color: #def0ef;
 			height: 45px;
 			line-height: 45px;
 			text-align: center;
@@ -199,7 +187,7 @@
 					position: absolute;
 					top: 36%;
 					left: 57px;
-					content: '';
+					content: "";
 					width: 20px;
 					height: 10px;
 					background-color: #02a297;
@@ -209,16 +197,13 @@
 					position: absolute;
 					top: 43%;
 					left: 76px;
-					content: '';
+					content: "";
 					border-width: 6px;
 					border-style: solid;
 					border-color: #fff transparent transparent transparent;
 				}
 			}
-
 		}
-
-
 	}
 
 	.specialty-sort-content {
@@ -240,8 +225,7 @@
 				height: 35px;
 				line-height: 35px;
 				width: 100%;
-				border-bottom: 1px dotted #E1DFDF;
-
+				border-bottom: 1px dotted #e1dfdf;
 
 				a {
 					white-space: nowrap;
@@ -286,7 +270,7 @@
 			z-index: 0;
 
 			&::before {
-				content: '';
+				content: "";
 				position: absolute;
 				bottom: -7px;
 				left: 0;
@@ -295,9 +279,6 @@
 				background-color: #02a297;
 			}
 		}
-
-
-
 	}
 
 	.all-specialty-title-right {
@@ -309,48 +290,33 @@
 				color: #757373;
 
 				&:hover {
-					color: #02A297;
+					color: #02a297;
 				}
 			}
 		}
 	}
 
 	.all-specialty-content {
-
 		ul {
-
 			padding-bottom: 15px;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
 
-
 			li {
 				width: 47%;
 				margin-right: 0px;
 
-
-
 				&:nth-child(5n) {
 					margin-right: 0;
 				}
-
-				&:last-child {
-					margin-left: auto;
-				}
-
-				&:first-child {
-					margin-right: auto;
-				}
-
-
 
 				a {
 					box-sizing: border-box;
 					padding: 20px;
 					padding: 0;
 					background-color: transparent;
-					box-shadow: 0px 0px 0px rgba(0, 0, 0, .15);
+					box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
 					display: inline-block;
 					border-radius: 15px;
 					border-radius: 0;
@@ -359,7 +325,6 @@
 					width: 100%;
 					height: auto;
 					overflow: hidden;
-
 
 					.all-specialty-pic {
 						width: 100%;
@@ -371,13 +336,12 @@
 					img {
 						width: 100%;
 						height: 100%;
-						transition: all .5s ease-out;
+						transition: all 0.5s ease-out;
 					}
 
 					&:hover img {
-						transform: scale(1.1)
+						transform: scale(1.1);
 					}
-
 
 					.all-specialty-content-title {
 						width: 100%;
@@ -393,11 +357,10 @@
 					}
 
 					&:hover .all-specialty-content-title {
-						color: #02A297;
+						color: #02a297;
 					}
 				}
 			}
 		}
 	}
-
 }

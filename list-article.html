@@ -6,8 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>文章列表页</title>
-	<link rel="stylesheet" href="./css/dist/common.css">
-	<link rel="stylesheet" href="./css/dist/list-article.css">
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/common.min.css">
+	<link rel="stylesheet" href="./css/list-article.min.css">
 </head>
 
 <body>
@@ -84,8 +85,8 @@
 			</nav>
 			<div class="search-box">
 				<div class="search model-box">
-					<form action="https://www.shangzhixiao.com/e/search/index.php" target="_blank" method="post"
-						name="schform" id="schform" autocomplete="off">
+					<form action="https://www.shangzhixiao.com/e/search/index.php" target="_blank" method="post" name="schform"
+						id="schform" autocomplete="off">
 						<input type="hidden" value="title,skey" name="show">
 						<input class="tempid" name="tempid" value="1" type="hidden">
 						<input class="classid" name="classid" value="4,9,10,11,12" type="hidden">
@@ -95,11 +96,10 @@
 							<li data-option="7">学校</li>
 							<li data-option="5">专业</li>
 						</ul>
-						<input name="keyboard" type="text" id="keyboard" class="input-search" value=""
-							placeholder="请输入关键词">
-						<button id="search-submit" type="submit" class="input-submit" name="submit"><span><svg
-									t="1646791607394" class="icon" viewBox="0 0 1024 1024" version="1.1"
-									xmlns="http://www.w3.org/2000/svg" p-id="2116" width="64" height="64">
+						<input name="keyboard" type="text" id="keyboard" class="input-search" value="" placeholder="请输入关键词">
+						<button id="search-submit" type="submit" class="input-submit" name="submit"><span><svg t="1646791607394"
+									class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2116"
+									width="64" height="64">
 									<path
 										d="M469.333333 768c-166.4 0-298.666667-132.266667-298.666666-298.666667s132.266667-298.666667 298.666666-298.666666 298.666667 132.266667 298.666667 298.666666-132.266667 298.666667-298.666667 298.666667z m0-85.333333c119.466667 0 213.333333-93.866667 213.333334-213.333334s-93.866667-213.333333-213.333334-213.333333-213.333333 93.866667-213.333333 213.333333 93.866667 213.333333 213.333333 213.333334z m251.733334 0l119.466666 119.466666-59.733333 59.733334-119.466667-119.466667 59.733334-59.733333z"
 										fill="#444444" p-id="2117"></path>
@@ -117,8 +117,8 @@
 						<a href="#" target="_blank">女生专业</a>
 					</div>
 					<div class="pop-search-close">
-						<svg t="1646880684362" class="icon" viewBox="0 0 1024 1024" version="1.1"
-							xmlns="http://www.w3.org/2000/svg" p-id="4299" width="128" height="128">
+						<svg t="1646880684362" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+							p-id="4299" width="128" height="128">
 							<path
 								d="M512 451.669333l211.2-211.2 60.330667 60.330667-211.2 211.2 211.2 211.2-60.330667 60.330667-211.2-211.2-211.2 211.2-60.330667-60.330667 211.2-211.2-211.2-211.2L300.8 240.469333z"
 								p-id="4300"></path>
@@ -233,14 +233,28 @@
 					</li>
 				</ul>
 				<div class="nav-page">
-					<a href="#" class="nav-page-pre">上一页</a>
-					<a href="#" class="nav-page-first">首页</a>
-					<span>
-						<a href="#">1</a>
-						<a href="#">2</a>
-					</span>
-					<a href="#" class="nav-page-last">末页</a>
-					<a href="#" class="nav-page-next">下一页</a>
+					<div class="nav-page-top">
+						<a href="#" class="nav-page-first">首页</a>
+						<a href="#" class="nav-page-pre">上一页</a>
+
+						<a href="#" class="nav-page-next">下一页</a>
+						<a href="#" class="nav-page-last">尾页</a>
+						<span>转到：
+							<select name="select" id="nav-page-select">
+								<option value="" selected>第 1 页</option>
+								<option value="">第 2 页</option>
+								<option value="">第 3 页</option>
+								<option value="">第 4 页</option>
+								<option value="">第 5 页</option>
+								<option value="">第 6 页</option>
+							</select>
+						</span>
+					</div>
+					<div class="nav-page-bottom">
+						<span>页次：1/3</span>
+						<span>每页：25</span>
+						<span>总数：55</span>
+					</div>
 				</div>
 			</div>
 			<div class="list-content option-select-cont">

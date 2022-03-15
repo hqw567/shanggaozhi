@@ -6,8 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>文章详情页</title>
-	<link rel="stylesheet" href="./css/dist/common.css">
-	<link rel="stylesheet" href="./css/dist/content-article.css">
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/common.min.css">
+	<link rel="stylesheet" href="./css/content-article.min.css">
 </head>
 
 <body>
@@ -84,8 +85,8 @@
 			</nav>
 			<div class="search-box">
 				<div class="search model-box">
-					<form action="https://www.shangzhixiao.com/e/search/index.php" target="_blank" method="post"
-						name="schform" id="schform" autocomplete="off">
+					<form action="https://www.shangzhixiao.com/e/search/index.php" target="_blank" method="post" name="schform"
+						id="schform" autocomplete="off">
 						<input type="hidden" value="title,skey" name="show">
 						<input class="tempid" name="tempid" value="1" type="hidden">
 						<input class="classid" name="classid" value="4,9,10,11,12" type="hidden">
@@ -95,11 +96,10 @@
 							<li data-option="7">学校</li>
 							<li data-option="5">专业</li>
 						</ul>
-						<input name="keyboard" type="text" id="keyboard" class="input-search" value=""
-							placeholder="请输入关键词">
-						<button id="search-submit" type="submit" class="input-submit" name="submit"><span><svg
-									t="1646791607394" class="icon" viewBox="0 0 1024 1024" version="1.1"
-									xmlns="http://www.w3.org/2000/svg" p-id="2116" width="64" height="64">
+						<input name="keyboard" type="text" id="keyboard" class="input-search" value="" placeholder="请输入关键词">
+						<button id="search-submit" type="submit" class="input-submit" name="submit"><span><svg t="1646791607394"
+									class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2116"
+									width="64" height="64">
 									<path
 										d="M469.333333 768c-166.4 0-298.666667-132.266667-298.666666-298.666667s132.266667-298.666667 298.666666-298.666666 298.666667 132.266667 298.666667 298.666666-132.266667 298.666667-298.666667 298.666667z m0-85.333333c119.466667 0 213.333333-93.866667 213.333334-213.333334s-93.866667-213.333333-213.333334-213.333333-213.333333 93.866667-213.333333 213.333333 93.866667 213.333333 213.333333 213.333334z m251.733334 0l119.466666 119.466666-59.733333 59.733334-119.466667-119.466667 59.733334-59.733333z"
 										fill="#444444" p-id="2117"></path>
@@ -117,8 +117,8 @@
 						<a href="#" target="_blank">女生专业</a>
 					</div>
 					<div class="pop-search-close">
-						<svg t="1646880684362" class="icon" viewBox="0 0 1024 1024" version="1.1"
-							xmlns="http://www.w3.org/2000/svg" p-id="4299" width="128" height="128">
+						<svg t="1646880684362" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+							p-id="4299" width="128" height="128">
 							<path
 								d="M512 451.669333l211.2-211.2 60.330667 60.330667-211.2 211.2 211.2 211.2-60.330667 60.330667-211.2-211.2-211.2 211.2-60.330667-60.330667 211.2-211.2-211.2-211.2L300.8 240.469333z"
 								p-id="4300"></path>
@@ -221,6 +221,7 @@
 						6．掌握田间试验设计要点和调查分析的科学方法；<br>
 						7．掌握作物种子检验的主要指标并能够独立进行检验操作；<br>
 					</p>
+					<p><img src="./images/specialty/specialty.png" class="pimg" style="width: 100%;" alt=""></p>
 				</div>
 				<div class="main-article-sg">
 					<div class="main-article-source">
@@ -700,6 +701,14 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- 图片弹出窗 -->
+	<div id="outerdiv"
+		style="position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.7); z-index: 2; width: 100%; height: 100%; display: none;">
+		<div id="innerdiv" style="position: absolute;">
+			<img id="bigimg" style="border: 5px solid #fff;" src="" />
+		</div>
+	</div>
 	<script src="./js/jquery-1.11.3.min.js"></script>
 	<script src="./js/index.js"></script>
 </body>
