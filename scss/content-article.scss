@@ -59,7 +59,7 @@
 		&:first-child {
 			width: 15px;
 			height: 15px;
-			background-image: url(../../images/svg/time.svg);
+			background-image: url(../images/svg/time.svg);
 			background-size: 100% 100%;
 		}
 	}
@@ -94,7 +94,7 @@
 			content: "";
 			width: 20px;
 			height: 20px;
-			background-image: url(../../images/svg/guided.svg);
+			background-image: url(../images/svg/guided.svg);
 			background-size: 100% 100%;
 		}
 	}
@@ -116,7 +116,7 @@
 		line-height: 25px;
 		text-align: justify;
 	}
-
+	
 	.main-tit {
 		color: #02a297;
 	}
@@ -138,7 +138,7 @@
 				width: 24px;
 				height: 24px;
 				margin-right: 5px;
-				background-image: url(../../images/svg/source.svg);
+				background-image: url(../images/svg/source.svg);
 				background-size: 100% 100%;
 			}
 		}
@@ -358,7 +358,7 @@
 				margin-right: 0px;
 				width: 15px;
 				height: 15px;
-				background-image: url(../../images/svg/time.svg);
+				background-image: url(../images/svg/time.svg);
 				background-size: 100% 100%;
 			}
 		}
@@ -577,3 +577,4 @@
 		}
 	}
 }
+

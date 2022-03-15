@@ -570,7 +570,7 @@ footer {
 	.nav-path-ico {
 		width: 22px;
 		height: 22px;
-		background-image: url(../../images/svg/path.svg);
+		background-image: url(../images/svg/path.svg);
 		background-size: 100% 100%;
 	}
 
@@ -1109,6 +1109,25 @@ footer {
 	}
 }
 
+// content img start
+.main-content img {
+	width: 100%;
+	height: auto;
+}
+.main-content p a {
+	color: #02a297;
+	text-decoration: underline;
+}
+@media screen and (min-width: 620px) {
+	.main-content img {
+		display: block;
+		margin: 0 auto;
+		width: 600px;
+	}
+}
+
+//content img end
+
 /*1100分辨率（大于960px，小于1199px）*/
 @media screen and (min-width: 960px) and (max-width: 1199px) {
 }
@@ -1225,7 +1244,7 @@ footer {
 		.nav-path-ico {
 			width: 22px;
 			height: 22px;
-			background-image: url(../../images/svg/path.svg);
+			background-image: url(../images/svg/path.svg);
 			background-size: 100% 100%;
 		}
 
@@ -1628,23 +1647,23 @@ footer {
 				width: 100%;
 
 				&:nth-child(2) a::before {
-					background-image: url(../../images/svg/school.svg);
+					background-image: url(../images/svg/school.svg);
 				}
 
 				&:nth-child(3) a::before {
-					background-image: url(../../images/svg/specialty.svg);
+					background-image: url(../images/svg/specialty.svg);
 				}
 
 				&:nth-child(4) a::before {
-					background-image: url(../../images/svg/test-info.svg);
+					background-image: url(../images/svg/test-info.svg);
 				}
 
 				&:nth-child(5) a::before {
-					background-image: url(../../images/svg/article.svg);
+					background-image: url(../images/svg/article.svg);
 				}
 
 				&:nth-child(6) a::before {
-					background-image: url(../../images/svg/trend.svg);
+					background-image: url(../images/svg/trend.svg);
 				}
 
 				.head-dropdown {
@@ -1711,7 +1730,7 @@ footer {
 				margin: 0 7px 0 14px;
 				width: 20px;
 				height: 20px;
-				background-image: url(../../images/svg/home.svg);
+				background-image: url(../images/svg/home.svg);
 				background-size: 100% 100%;
 			}
 
