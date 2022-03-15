@@ -7,8 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>文章详情页</title>
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/share.min.css">
 	<link rel="stylesheet" href="./css/common.min.css">
 	<link rel="stylesheet" href="./css/content-article.min.css">
+
 </head>
 
 <body>
@@ -186,12 +188,14 @@
 						<span>时间：2022-01-21 12:03</span>
 					</div>
 
-					<div class="main-article-head-share">
-						<a href="#"></a>
-						<a href="#"></a>
-						<a href="#"></a>
-						<a href="#"></a>
+
+					<div class="social-share main-article-head-share" data-initialized="true">
+						<a href="#" class="social-share-icon icon-weibo" target="_blank"></a>
+						<a href="#" class="social-share-icon icon-qq" target="_blank"></a>
+						<a href="#" class="social-share-icon icon-wechat"></a>
+						<a href="#" class="social-share-icon icon-qzone" target="_blank"></a>
 					</div>
+
 				</div>
 				<div class="main-article-guided">
 					<span>导读</span>
@@ -711,6 +715,7 @@
 	</div>
 	<script src="./js/jquery-1.11.3.min.js"></script>
 	<script src="./js/index.js"></script>
+	<script src="./js/share.min.js"></script>
 </body>
 
 </html>
