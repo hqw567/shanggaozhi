@@ -230,6 +230,8 @@ function selectModel() {
 			.attr('data-option'));
 		$('.classid').attr('value', $(this)
 			.attr('data-option'));
+		$('.tempid').attr('value', $(this)
+			.attr('data-tempid'));
 		$option.slideUp(speed, function () {
 			init($(this));
 		});
@@ -321,3 +323,33 @@ function imgShow(outerdiv, innerdiv, bigimg, _this) {
 		$(this).fadeOut("fast");
 	});
 }
+
+$(function () {
+	// let className = $('.list-right-author')
+	// if (className.html() === '单招资讯') {
+	// 	className.siblings().addClass('pic-zixun')
+	// } else if (className.html() === '考试信息') {
+	// 	className.siblings().addClass('pic-kaoshi')
+	// } else if (className.html() === '院校动态') {
+	// 	className.siblings().addClass('pic-yuanxiao')
+	// }
+
+	let authorName = $('.main-article-head-author span:last')
+	const NameWs = '阿狸'
+	const NameLzh = '千手'
+	const NameWzs = '阿霜'
+	const NameCxy = '柠乐'
+	if (authorName.html() != undefined) {
+		if (authorName.html().indexOf(NameWs) != -1) {
+			authorName.siblings().addClass('pic-ws')
+		} else if (authorName.html().indexOf(NameLzh) != -1) {
+			authorName.siblings().addClass('pic-lzh')
+		} else if (authorName.html().indexOf(NameWzs) != -1) {
+			authorName.siblings().addClass('pic-wzs')
+		} else if (authorName.html().indexOf(NameCxy) != -1) {
+			authorName.siblings().addClass('pic-cxy')
+		} else {
+			authorName.siblings().addClass('pic-author')
+		}
+	}
+})

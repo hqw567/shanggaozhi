@@ -81,8 +81,6 @@
 		}
 
 		span:last-child {
-			position: relative;
-			top: 3px;
 			width: 32px;
 			text-align: center;
 			color: #a6a2a2;
@@ -138,10 +136,16 @@
 
 		p {
 			position: absolute;
-			bottom: 45px;
-			left: 42px;
-			width: 382px;
+			display: -webkit-box;
+			bottom: 10%;
+			left: 9%;
+			width: 80%;
 			height: 57px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			text-align: justify;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
 			line-height: 30px;
 			color: #fff;
 			font-size: 18px;
@@ -383,7 +387,6 @@
 					.school-right-title {
 						color: #101010;
 						font-size: 16px;
-						margin-bottom: 15px;
 						width: 172px;
 						white-space: nowrap;
 						overflow: hidden;
@@ -399,7 +402,7 @@
 						margin-right: 5px;
 						color: #02a297;
 						background-color: #fff;
-
+						margin-top: 6px;
 						&:last-child {
 							margin-right: 0;
 						}
@@ -645,6 +648,7 @@ article.wrap .list-content {
 		font-weight: 700;
 		color: #101010;
 		width: 550.5px;
+		height: 19px;
 		text-overflow: ellipsis;
 		overflow: hidden;
 		white-space: nowrap;
@@ -694,7 +698,6 @@ article.wrap .list-content {
 			height: 16px;
 			display: block;
 			margin-left: 190px;
-			margin-right: 5px;
 			background-image: url(../images/svg/time.svg);
 			background-size: 100% 100%;
 		}
@@ -981,8 +984,6 @@ article.wrap .list-content {
 			}
 
 			span:last-child {
-				position: relative;
-				top: 3px;
 				width: 32px;
 				text-align: center;
 				color: #a6a2a2;
@@ -1037,18 +1038,6 @@ article.wrap .list-content {
 			img {
 				width: 100%;
 				height: 100%;
-			}
-
-			p {
-				position: absolute;
-				bottom: 18%;
-				left: 50px;
-				width: 80%;
-				height: 57px;
-				line-height: 30px;
-				color: #fff;
-				font-size: 18px;
-				text-shadow: 0.1em 0.1em 0.2em black;
 			}
 		}
 
@@ -1113,9 +1102,10 @@ article.wrap .list-content {
 
 	.main-tright {
 		box-sizing: border-box;
-		padding: 10px 20px 0 20px;
+		padding: 20px;
+		padding-top: 5px;
 		width: 100%;
-		height: 480px;
+		height: auto;
 		background-color: #fff;
 
 		&:hover {
@@ -1521,7 +1511,7 @@ article.wrap .list-content {
 			li {
 				padding: 10px 0px;
 				width: 100%;
-				height: 100px;
+				height: auto;
 				box-sizing: border-box;
 				border-bottom: 1px dashed #e1dfdf;
 
@@ -1533,9 +1523,9 @@ article.wrap .list-content {
 				}
 
 				& a div:first-child {
-					width: 35%;
-					height: 100%;
-					margin-right: 15px;
+					width: 37%;
+					height: auto;
+					margin-right: 0px;
 
 					img {
 						width: 100%;
@@ -1547,15 +1537,17 @@ article.wrap .list-content {
 	}
 
 	.list-right {
-		width: 66%;
-
+		width: 59%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		p {
 			letter-spacing: 0;
 			display: -webkit-box;
 			font-size: 14px;
 			color: #7b7878;
 			width: 100%;
-			height: 36px;
+			height: auto;
 			text-align: justify;
 			-webkit-line-clamp: 2;
 			-webkit-box-orient: vertical;
@@ -1569,8 +1561,8 @@ article.wrap .list-content {
 			font-weight: 700;
 			color: #101010;
 			width: 100%;
+			height: 36px;
 			display: -webkit-box;
-
 			overflow: hidden;
 			white-space: normal;
 			-webkit-line-clamp: 2;
@@ -1592,7 +1584,7 @@ article.wrap .list-content {
 			width: 100%;
 			display: flex;
 			align-items: center;
-
+			margin: 0;
 			.list-right-pic {
 				display: block;
 				margin-right: 3px;
@@ -1612,7 +1604,6 @@ article.wrap .list-content {
 				width: 15px;
 				height: 15px;
 				display: block;
-				margin-right: 3px;
 				margin-left: auto;
 				background: no-repeat;
 				background-image: url(../images/svg/time.svg);
@@ -1690,7 +1681,6 @@ article.wrap .list-content {
 					justify-content: center;
 					align-items: center;
 					overflow: hidden;
-
 
 					img {
 						width: 70px;

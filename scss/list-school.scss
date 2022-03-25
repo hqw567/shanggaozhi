@@ -26,7 +26,7 @@
 			display: flex;
 
 			li {
-				margin-right: 10px;
+				margin-right: 2px;
 
 				a {
 					padding: 5px 10px;
@@ -48,7 +48,12 @@
 		}
 	}
 }
-
+.school-sort-active {
+	background-color: #02a297;
+	border-radius: 50px;
+	color: #fff !important;
+	font-weight: 700;
+}
 .school-main {
 	margin-top: 40px;
 
@@ -244,11 +249,11 @@
 
 				&::before {
 					position: absolute;
-					top: 44%;
-					left: 77px;
+					top: 22%;
+					left: 76px;
 					content: "";
-					width: 10px;
-					height: 10px;
+					width: 20px;
+					height: 22px;
 					background-color: #02a297;
 				}
 
@@ -307,7 +312,12 @@
 			}
 		}
 	}
-
+	.school-sort-active {
+		background-color: transparent;
+		border-radius: 0px;
+		color: #101010 !important;
+		font-weight: 700;
+	}
 	.school-main {
 		margin-top: 20px;
 		width: 100%;
@@ -397,10 +407,9 @@
 
 	.school-main-content-title {
 		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
+		align-items: flex-start;
 		margin-bottom: 0px;
-
+		flex-direction: column;
 		h1 {
 			font-size: 16px;
 			color: #101010;
