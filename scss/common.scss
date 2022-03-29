@@ -587,11 +587,11 @@ footer {
 	text-align: center;
 	font-size: 14px;
 	.nav-page-top {
+		line-height: 20px;
 		a {
 			display: inline-block;
-			color: #757373;
-
-			margin: 0 15px;
+			color: #101010;
+			font-weight: 700;
 		}
 
 		.nav-page-pre,
@@ -623,6 +623,7 @@ footer {
 			border-radius: 5px;
 			border: 1px solid #bbb;
 			background-color: #fff;
+			margin-top: -4px;
 		}
 	}
 	.nav-page-bottom {

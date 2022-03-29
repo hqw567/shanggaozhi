@@ -4,8 +4,7 @@
 	background-color: #fff;
 	border-radius: 7px;
 	box-sizing: border-box;
-	box-shadow: 0px 1px 9px 6px rgba(198, 194, 194, 61);
-
+	box-shadow: 0px 1px 9px 6px rgba(0, 0, 0, 0.08);
 	.specialty-sort-title {
 		margin-top: 30px;
 		font-weight: 700;
@@ -18,19 +17,16 @@
 
 .specialty-sort-content {
 	ul {
-		margin-top: 17px;
-
+		margin-top: 11px;
 		li {
 			float: left;
-			margin-left: 5px;
-			margin-top: 15px;
-
+			margin-left: 11px;
+			margin-top: 20px;
 			a {
 				white-space: nowrap;
+				padding: 5px 10px;
 				font-size: 16px;
-				color: #576361;
-				padding: 3px 8px;
-
+				color: #575656;
 				&:hover {
 					background-color: #02a297;
 					color: #fff;
@@ -40,7 +36,11 @@
 		}
 	}
 }
-
+.specialty-sort-active {
+	background-color: #02a297;
+	color: #fff !important;
+	border-radius: 15px;
+}
 .all-specialty {
 	margin-top: 40px;
 }

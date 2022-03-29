@@ -152,11 +152,11 @@
 
 .main-content {
 	p {
-		line-height: 25px;
 		margin: 10px 0px;
 		font-size: 16px;
 		color: #3b3b3b;
-		line-height: 25px;
+		line-height: 35px;
+		letter-spacing: 0.5px;
 		text-align: justify;
 	}
 
@@ -176,7 +176,7 @@
 			margin-right: 8px;
 		}
 		strong {
-			font-size: 14px;
+			font-size: 18px;
 			font-weight: 700;
 			color: #02a297;
 			background-color: #fff;
@@ -263,6 +263,16 @@
 			span {
 				font-weight: 700;
 				color: #e11616;
+				&::before {
+					content: "";
+					display: inline-block;
+					width: 10px;
+					height: 14px;
+					vertical-align: baseline;
+					margin-right: 3px;
+					background-image: url(../images/svg/disclaimer.svg);
+					background-size: 100% 100%;
+				}
 			}
 		}
 	}
