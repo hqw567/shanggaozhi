@@ -428,6 +428,8 @@
 			th,
 			td {
 				white-space: normal !important;
+				word-break: break-all !important;
+				width: auto !important;
 			}
 		}
 	}
