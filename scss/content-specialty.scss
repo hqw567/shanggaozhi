@@ -1,11 +1,11 @@
 .head-specialty {
-	padding: 20px 80px 20px 22px;
+	padding: 20px 22px 20px 22px;
 	box-sizing: border-box;
 	background-color: #fff;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-
+	position: relative;
 	img {
 		width: 243px;
 		height: 141px;
@@ -15,7 +15,6 @@
 
 .head-specialty-content {
 	margin: 0 0px 0 20px;
-	width: 60%;
 }
 
 .head-specialty-title {
@@ -28,6 +27,7 @@
 		font-weight: 700;
 		color: #101010;
 		margin-right: 28px;
+		white-space: nowrap;
 	}
 
 	div {
@@ -78,6 +78,8 @@
 }
 
 .head-specialty-keifu {
+	position: absolute;
+	right: 50px;
 	a {
 		width: 127px;
 		height: 35px;
@@ -326,6 +328,7 @@
 	}
 
 	.head-specialty-keifu {
+		position: static;
 		width: 100%;
 		padding-top: 12px;
 		margin-top: 10px;

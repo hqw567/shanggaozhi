@@ -1,12 +1,12 @@
 .head-school {
-	padding: 20px 80px 20px 15px;
+	padding: 20px 15px 20px 15px;
 	box-sizing: border-box;
 	background-color: #02a297;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	border-radius: 7px;
-
+	position: relative;
 	img {
 		width: 144px;
 		height: 144px;
@@ -15,7 +15,6 @@
 
 .head-school-content {
 	margin: 0 0px 0 20px;
-	width: 80%;
 }
 
 .head-school-title {
@@ -120,6 +119,8 @@
 }
 
 .head-school-keifu {
+	position: absolute;
+	right: 50px;
 	a {
 		display: block;
 		width: 100px;
@@ -359,6 +360,7 @@
 	}
 
 	.head-school-keifu {
+		position: static;
 		width: 100%;
 		border-top: 1px dotted #bbb;
 		padding-top: 12px;
@@ -417,7 +419,7 @@
 		width: 100%;
 
 		p {
-			font-size: 14px;
+			font-size: 16px;
 			color: #3b3b3b;
 			margin: 10px 0;
 			text-align: justify;

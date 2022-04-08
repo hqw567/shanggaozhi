@@ -1,22 +1,35 @@
 // swiper start
+#swiper .swiper-pagination-bullet {
+	background: #fff;
+	opacity: 1;
+}
 #swiper .swiper-pagination-bullet-active {
 	background-color: #02a297;
 }
 
 #swiper .swiper-button-prev::after,
 #swiper .swiper-button-next::after {
-	color: #02a297;
-	font-size: 40px;
+	color: #fff;
+	font-size: 22px;
 }
 
 #swiper .swiper-button-prev,
 #swiper .swiper-button-next {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	display: none;
+	background-color: #555655ce;
 }
-
+#swiper .swiper-button-prev {
+	left: 0;
+}
+#swiper .swiper-button-next {
+	right: 0;
+}
 #swiper:hover .swiper-button-prev,
 #swiper:hover .swiper-button-next {
-	display: block;
+	display: flex;
 }
 
 // swiper end
@@ -32,7 +45,7 @@
 
 .main-tleft {
 	box-sizing: border-box;
-	padding: 30px 20px 0 20px;
+	padding: 20px 20px 0 20px;
 
 	width: 350px;
 	height: 100%;
@@ -44,12 +57,12 @@
 }
 
 .main-tleft-title {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	color: #d9242a;
 	font-size: 18px;
 	font-weight: 700;
 	height: 30px;
-	border-bottom: 1px dashed #bbb;
+	border-bottom: 1px solid #e1dfdf;
 
 	span {
 		display: inline-block;
@@ -65,7 +78,7 @@
 		justify-content: space-between;
 		color: #101010;
 		font-size: 14px;
-		margin-bottom: 20px;
+		margin-bottom: 19px;
 		white-space: nowrap;
 
 		span:first-child {
@@ -235,7 +248,7 @@
 
 .main-tright {
 	box-sizing: border-box;
-	padding: 10px 15px 0 15px;
+	padding: 5px 15px 0 15px;
 	width: 350px;
 	height: 100%;
 	background-color: #fff;
@@ -329,15 +342,15 @@
 
 	.tab ul {
 		display: flex;
-
+		margin-top: 5px;
 		li {
 			position: relative;
 			cursor: pointer;
 			font-size: 16px;
 			color: #3b3b3b;
 			width: 100px;
-			height: 35px;
-			line-height: 35px;
+			height: 30px;
+			line-height: 30px;
 			box-sizing: border-box;
 			text-align: center;
 		}
@@ -381,6 +394,7 @@
 						white-space: nowrap;
 						overflow: hidden;
 						text-overflow: ellipsis;
+						margin-bottom: 10px;
 					}
 
 					.school-right-tags span {
@@ -454,15 +468,15 @@
 
 	.tab ul {
 		display: flex;
-
+		margin-top: 5px;
 		li {
 			position: relative;
 			cursor: pointer;
 			font-size: 16px;
 			color: #3b3b3b;
 			width: 100px;
-			height: 35px;
-			line-height: 35px;
+			height: 30px;
+			line-height: 30px;
 			box-sizing: border-box;
 			text-align: center;
 		}
@@ -588,15 +602,15 @@ article.wrap {
 
 	.tab ul {
 		display: flex;
-
+		margin-top: 5px;
 		li {
 			position: relative;
 			cursor: pointer;
 			font-size: 16px;
 			color: #3b3b3b;
 			width: 100px;
-			height: 35px;
-			line-height: 35px;
+			height: 30px;
+			line-height: 30px;
 			box-sizing: border-box;
 			text-align: center;
 		}
@@ -704,9 +718,9 @@ article.wrap .list-content {
 
 .list-content-more {
 	width: 100%;
-	height: 120px;
+	height: 70px;
 	text-align: center;
-	line-height: 120px;
+	line-height: 70px;
 
 	a {
 		color: #7b7878;
@@ -929,7 +943,6 @@ article.wrap .list-content {
 		padding: 20px 20px 0 20px;
 
 		width: 100%;
-		height: 480px;
 		background-color: #fff;
 		order: 1;
 
@@ -944,7 +957,7 @@ article.wrap .list-content {
 		font-size: 18px;
 		font-weight: 700;
 		height: 40px;
-		border-bottom: 1px dashed #bbb;
+		border-bottom: 1px solid #e1dfdf;
 	}
 
 	.main-tleft-text {
@@ -1293,15 +1306,15 @@ article.wrap .list-content {
 		.tab ul {
 			display: flex;
 			display: none;
-
+			margin-top: 5px;
 			li {
 				position: relative;
 				cursor: pointer;
 				font-size: 16px;
 				color: #3b3b3b;
 				width: 100px;
-				height: 35px;
-				line-height: 35px;
+				height: 30px;
+				line-height: 30px;
 				box-sizing: border-box;
 				text-align: center;
 			}
@@ -1436,15 +1449,15 @@ article.wrap .list-content {
 		.tab ul {
 			display: flex;
 			display: none;
-
+			margin-top: 5px;
 			li {
 				position: relative;
 				cursor: pointer;
 				font-size: 16px;
 				color: #3b3b3b;
 				width: 100%;
-				height: 35px;
-				line-height: 35px;
+				height: 30px;
+				line-height: 30px;
 				box-sizing: border-box;
 				text-align: center;
 			}
