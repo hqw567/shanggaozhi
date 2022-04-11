@@ -59,20 +59,6 @@ $(function () {
 	let specialtyTabUl = $('.specialty .tab-default').siblings($('ul'))
 	let listDefault = $('.list .tab-default')
 	let listTabUl = $('.list .tab-default').siblings($('ul'))
-	// $(".school .option").click(function () {
-	// 	$(this).addClass('option-border')
-	// 	$(this).siblings().removeClass('option-border')
-	// 	$('.school .option-select-cont').eq($(this).index()).addClass('option-select-cont-show')
-	// 	$('.school .option-select-cont').eq($(this).index()).siblings().removeClass(
-	// 		'option-select-cont-show')
-	// 	if (schoolDefault.css('display') === 'block') {
-	// 		schoolTabUl.css('display', 'none')
-	// 	}
-	// 	schoolDefault.text($(this).text())
-	// })
-	// schoolDefault.click(function () {
-	// 	schoolTabUl.toggle()
-	// })
 	tabSwitch(
 		'.school .option',
 		'option-border',
@@ -97,35 +83,6 @@ $(function () {
 		listDefault,
 		listTabUl
 	)
-	// $(".specialty .option").click(function () {
-	// 	$(this).addClass('option-border')
-	// 	$(this).siblings().removeClass('option-border')
-	// 	$('.specialty .option-select-cont').eq($(this).index()).addClass('option-select-cont-show')
-	// 	$('.specialty .option-select-cont').eq($(this).index()).siblings().removeClass(
-	// 		'option-select-cont-show')
-	// 	if (specialtyDefault.css('display') === 'block') {
-	// 		specialtyTabUl.css('display', 'none')
-	// 	}
-	// 	specialtyDefault.text($(this).text())
-	// })
-	// specialtyDefault.click(function () {
-	// 	specialtyTabUl.toggle()
-	// })
-
-	// $(".list .option").click(function () {
-	// 	$(this).addClass('option-border')
-	// 	$(this).siblings().removeClass('option-border')
-	// 	$('.list .option-select-cont').eq($(this).index()).addClass('option-select-cont-show')
-	// 	$('.list .option-select-cont').eq($(this).index()).siblings().removeClass(
-	// 		'option-select-cont-show')
-	// 	if (listDefault.css('display') === 'block') {
-	// 		listTabUl.css('display', 'none')
-	// 	}
-	// 	listDefault.text($(this).text())
-	// })
-	// listDefault.click(function () {
-	// 	listTabUl.toggle()
-	// })
 
 	$('.popular .option').click(function () {
 		$(this).addClass('option-border-hot')
@@ -315,72 +272,63 @@ $(function () {
 	})
 })
 
+// $(function () {
+// 	$('.pimg').click(function () {
+// 		var _this = $(this) //将当前的pimg元素作为_this传入函数
+// 		imgShow('#outerdiv', '#innerdiv', '#bigimg', _this)
+// 	})
+// })
+
+// function imgShow(outerdiv, innerdiv, bigimg, _this) {
+// 	var src = _this.attr('src') //获取当前点击的pimg元素中的src属性
+// 	$(bigimg).attr('src', src) //设置#bigimg元素的src属性
+
+// 	/*获取当前点击图片的真实大小，并显示弹出层及大图*/
+// 	$('<img/>')
+// 		.attr('src', src)
+// 		.load(function () {
+// 			var windowW = $(window).width() //获取当前窗口宽度
+// 			var windowH = $(window).height() //获取当前窗口高度
+// 			var realWidth = this.width //获取图片真实宽度
+// 			var realHeight = this.height //获取图片真实高度
+// 			var imgWidth, imgHeight
+// 			var scale = 0.8 //缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放
+
+// 			if (realHeight > windowH * scale) {
+// 				//判断图片高度
+// 				imgHeight = windowH * scale //如大于窗口高度，图片高度进行缩放
+// 				imgWidth = (imgHeight / realHeight) * realWidth // 等比例缩放宽度
+// 				if (imgWidth > windowW * scale) {
+// 					//如宽度扔大于窗口宽度
+// 					imgWidth = windowW * scale //再对宽度进行缩放
+// 				}
+// 			} else if (realWidth > windowW * scale) {
+// 				//如图片高度合适，判断图片宽度
+// 				imgWidth = windowW * scale //如大于窗口宽度，图片宽度进行缩放
+// 				imgHeight = (imgWidth / realWidth) * realHeight // 等比例缩放高度
+// 			} else {
+// 				//如果图片真实高度和宽度都符合要求，高宽不变
+// 				imgWidth = realWidth
+// 				imgHeight = realHeight
+// 			}
+// 			$(bigimg).css('width', imgWidth) //以最终的宽度对图片缩放
+
+// 			var w = (windowW - imgWidth) / 2 // 计算图片与窗口左边距
+// 			var h = (windowH - imgHeight) / 2 // 计算图片与窗口上边距
+// 			$(innerdiv).css({
+// 				top: h,
+// 				left: w,
+// 			}) //设置#innerdiv的top和left属性
+// 			$(outerdiv).fadeIn('fast') //淡入显示#outerdiv及.pimg
+// 		})
+
+// 	$(outerdiv).click(function () {
+// 		//再次点击淡出消失弹出层
+// 		$(this).fadeOut('fast')
+// 	})
+// }
+
 $(function () {
-	$('.pimg').click(function () {
-		var _this = $(this) //将当前的pimg元素作为_this传入函数
-		imgShow('#outerdiv', '#innerdiv', '#bigimg', _this)
-	})
-})
-
-function imgShow(outerdiv, innerdiv, bigimg, _this) {
-	var src = _this.attr('src') //获取当前点击的pimg元素中的src属性
-	$(bigimg).attr('src', src) //设置#bigimg元素的src属性
-
-	/*获取当前点击图片的真实大小，并显示弹出层及大图*/
-	$('<img/>')
-		.attr('src', src)
-		.load(function () {
-			var windowW = $(window).width() //获取当前窗口宽度
-			var windowH = $(window).height() //获取当前窗口高度
-			var realWidth = this.width //获取图片真实宽度
-			var realHeight = this.height //获取图片真实高度
-			var imgWidth, imgHeight
-			var scale = 0.8 //缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放
-
-			if (realHeight > windowH * scale) {
-				//判断图片高度
-				imgHeight = windowH * scale //如大于窗口高度，图片高度进行缩放
-				imgWidth = (imgHeight / realHeight) * realWidth // 等比例缩放宽度
-				if (imgWidth > windowW * scale) {
-					//如宽度扔大于窗口宽度
-					imgWidth = windowW * scale //再对宽度进行缩放
-				}
-			} else if (realWidth > windowW * scale) {
-				//如图片高度合适，判断图片宽度
-				imgWidth = windowW * scale //如大于窗口宽度，图片宽度进行缩放
-				imgHeight = (imgWidth / realWidth) * realHeight // 等比例缩放高度
-			} else {
-				//如果图片真实高度和宽度都符合要求，高宽不变
-				imgWidth = realWidth
-				imgHeight = realHeight
-			}
-			$(bigimg).css('width', imgWidth) //以最终的宽度对图片缩放
-
-			var w = (windowW - imgWidth) / 2 // 计算图片与窗口左边距
-			var h = (windowH - imgHeight) / 2 // 计算图片与窗口上边距
-			$(innerdiv).css({
-				top: h,
-				left: w,
-			}) //设置#innerdiv的top和left属性
-			$(outerdiv).fadeIn('fast') //淡入显示#outerdiv及.pimg
-		})
-
-	$(outerdiv).click(function () {
-		//再次点击淡出消失弹出层
-		$(this).fadeOut('fast')
-	})
-}
-
-$(function () {
-	// let className = $('.list-right-author')
-	// if (className.html() === '单招资讯') {
-	// 	className.siblings().addClass('pic-zixun')
-	// } else if (className.html() === '考试信息') {
-	// 	className.siblings().addClass('pic-kaoshi')
-	// } else if (className.html() === '院校动态') {
-	// 	className.siblings().addClass('pic-yuanxiao')
-	// }
-
 	let authorName = $('.main-article-head-author span:last')
 	const NameWs = '阿狸'
 	const NameLzh = '千手'
@@ -402,7 +350,6 @@ $(function () {
 })
 
 // 当前分类高亮
-
 $(function () {
 	const pathName = window.location.pathname
 	const zhuanyeName = pathName.indexOf('zhuanye')
@@ -413,11 +360,11 @@ $(function () {
 			specialtyTitle = '全部专业'
 		}
 		let specialtyAlla = $('.specialty-sort ul li a')
-		for (let i = 0; i < specialtyAlla.length; i++) {
-			if (specialtyAlla[i].innerHTML === specialtyTitle) {
-				specialtyAlla[i].classList.add('sort-active')
+		specialtyAlla.each(function () {
+			if (this.innerHTML === specialtyTitle) {
+				this.classList.add('sort-active')
 			}
-		}
+		})
 	}
 	if (xuexiaoName !== -1) {
 		let schoolTitle = $('.school-main-title h1').text()
@@ -425,13 +372,12 @@ $(function () {
 			schoolTitle = '湖南省'
 		}
 		let schoolAlla = $('.school-sort ul li a')
-		for (let i = 0; i < schoolAlla.length; i++) {
-			if (schoolAlla[i].innerHTML === schoolTitle) {
-				schoolAlla[i].classList.add('sort-active')
+		schoolAlla.each(function () {
+			if (this.innerHTML === schoolTitle) {
+				this.classList.add('sort-active')
 			}
-		}
-
-		//院校地区选中
+		})
+		//院校地区
 		for (let i = 0; i < 15; i++) {
 			if (schoolAlla[i].innerHTML.slice(0, 2) === schoolTitle.slice(0, 2)) {
 				schoolAlla[i].classList.add('sort-active')
