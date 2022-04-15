@@ -259,7 +259,7 @@
 		flex-wrap: wrap;
 		margin-bottom: 0px;
 		position: absolute;
-		top: 10%;
+		top: 7.6%;
 		right: 3%;
 		width: 60%;
 
@@ -268,7 +268,7 @@
 			font-weight: 700;
 			color: #101010;
 			margin-right: 0px;
-			margin-bottom: 10px;
+			margin-bottom: 5px;
 			white-space: nowrap;
 			text-overflow: ellipsis;
 			width: 100%;
@@ -288,7 +288,7 @@
 				border-radius: 50px;
 				color: #02a297;
 				white-space: nowrap;
-
+				margin-bottom: 5px;
 				&:last-child {
 					margin-right: 0;
 				}
