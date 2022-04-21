@@ -1277,6 +1277,7 @@ footer {
 		content: "▲";
 	}
 }
+
 /*1100分辨率（大于960px，小于1199px）*/
 @media screen and (min-width: 960px) and (max-width: 1199px) {
 }
@@ -2189,6 +2190,15 @@ footer {
 					margin: 5px 0 5px 0;
 				}
 			}
+		}
+	}
+	.main-content table {
+		width: 100% !important;
+		th,
+		td {
+			white-space: normal !important;
+			word-break: break-all !important;
+			width: auto !important;
 		}
 	}
 }

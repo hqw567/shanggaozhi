@@ -145,30 +145,20 @@ $(function () {
 		$('.search-box').hide()
 	})
 
-	$('.specialty-sort div p').click(function () {
-		let _this = $(this)
-		let isFlex = $('.specialty-sort div ul').css('display')
-		if (isFlex !== 'flex') {
-			$('.specialty-sort div p').not(_this).siblings('ul').hide()
-			_this.siblings('ul').slideToggle('normal', function () {
+	//点击下拉显示内容
+	function clickDownShow(clickDom) {
+		clickDom.click(function () {
+			let _this = $(this)
+			clickDom.not(_this).siblings().hide()
+			_this.siblings().slideToggle('normal', function () {
 				$(window).scroll(function () {
-					_this.siblings('ul').slideUp()
+					_this.siblings().slideUp()
 				})
 			})
-		}
-	})
-	$('.school-sort div p').click(function () {
-		let _this = $(this)
-		let isFlex = $('.school-sort div ul').css('display')
-		if (isFlex !== 'flex') {
-			$('.school-sort div p').not(_this).siblings('ul').hide()
-			_this.siblings('ul').slideToggle('normal', function () {
-				$(window).scroll(function () {
-					_this.siblings('ul').slideUp()
-				})
-			})
-		}
-	})
+		})
+	}
+	clickDownShow($('.school-sort div p'))
+	clickDownShow($('.specialty-sort div p'))
 })
 
 $(function () {
@@ -372,16 +362,16 @@ $(function () {
 			schoolTitle = '湖南省'
 		}
 		let schoolAlla = $('.school-sort ul li a')
-		schoolAlla.each(function () {
-			if (this.innerHTML === schoolTitle) {
-				this.classList.add('sort-active')
+		schoolAlla.each(function (index) {
+			if (index < 15) {
+				if (this.innerHTML.slice(0, 2) === schoolTitle.slice(0, 2)) {
+					this.classList.add('sort-active')
+				}
+			} else {
+				if (this.innerHTML === schoolTitle) {
+					this.classList.add('sort-active')
+				}
 			}
 		})
-		//院校地区
-		for (let i = 0; i < 15; i++) {
-			if (schoolAlla[i].innerHTML.slice(0, 2) === schoolTitle.slice(0, 2)) {
-				schoolAlla[i].classList.add('sort-active')
-			}
-		}
 	}
 })
